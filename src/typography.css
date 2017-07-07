@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=latin-ext");
+
+* {
+	font-family: "Roboto", sans-serif;
+	color: #222;
+	font-size: 15px;
+}
+
+/********************************************************************** links */
+
+a {
+	color: inherit;
+	font-weight: 500;
+}
+
+/******************************************************************* headings */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 15px auto;
+	font-weight: 500;
+	display: block;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+/***************************************************************** paragraphs */
+
+p {
+	display: block;
+	margin: 15px auto;
+	line-height: 150%;
+	color: #555;
+}
+
+/********************************************************* common text styles */
+
+
+.light { font-weight: 100; }
+.bold { font-weight: 500; }
+.xbold { font-weight: 700; }
+.xxbold { font-weight: 900; }
+.italic { font-style: italic; }
+.strikethrough { text-decoration: line-through; }
+.underline { text-decoration: underline; }
+.overline { text-decoration: overline; }

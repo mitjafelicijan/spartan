@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/******************************************************* dividers and spacers */
+
+hr {
+	margin: 35px auto;
+	display: block;
+}
+
+hr.divider {
+	margin: 40px auto;
+	border-top: 2px solid #eee;
+}
+
+/****************************************************************** aligments */
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+.top { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+
+/********************************************************************* panels */
+
+.panel {
+	margin: 15px auto;
+}
+
+/******************************************************** details and summary */
+
+details {
+	margin: 15px auto;
+}
+
+details summary {
+	font-weight: 500;
+	user-select: none;
+	cursor: pointer;
+}
+
+/***************************************************************** navigation */
+
+nav {
+	display: block;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px 0;
+	margin-right: 10px;
+}
+
+nav.right a {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+/******************************************************************** buttons */
+
+.button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 100%;
+	font-weight: 500;
+	padding: 10px 25px;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #ccc;
+	border: 2px solid transparent;
+	width: auto;
+}
+	.button:hover {
+		background: #bbb;
+	}
+
+.button.outline {
+	border: 2px solid #ddd;
+	background: #fff;
+}
+	.button.outline:hover {
+		border-color: #999;
+	}
+
+.button.small {
+	padding: 8px 15px;
+	font-size: 85%;
+}
+
+.button.large {
+	padding: 15px 35px;
+	font-size: 110%;
+}
+
+/********************************************************************* images */
+
+img.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+/********************************************************************* tables */
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+table th, table td {
+	padding: 20px 0;
+}
+
+table tr {
+	border-bottom: 2px solid #eee;
+}
+
+table th {
+	font-weight: 700;
+	user-select: none;
+	cursor: pointer;
+}
+
+table.border {
+	border: 2px solid #eee;
+}
+
+table.border th, table.border td {
+	padding: 20px;
+}
+
+/************************************************************** form elements */
+
+label {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+input {
+	border: 2px solid #eee;
+	padding: 15px 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+input[type="checkbox"] { width: auto; }
+input[type="radio"] { width: auto; }
+input[type="color"] { padding: 0; height: 50px; }

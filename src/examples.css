@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+body {
+	margin: 50px auto 100px auto;
+}
+
+/* adds background color to grid cells */
+[class*="col-"] {
+	background: #eee;
+}
+
+form [class*="col-"] {
+	background: transparent;
+}
+
+nav a {
+	border: 1px dashed #eee;
+}
+
+.responsive-test {
+	margin: 50px auto;
+	padding: 20px;
+	text-align: center;
+	font-weight: 500;
+}
+
+
+
+
+/************************************************************** mobile screen */
+@media (max-width: 425px) {
+	.responsive-test {
+		background: red;
+		color: #fff;
+	}
+}
+
+/********************************************************************* tablet */
+@media (min-width: 425px) {
+	.responsive-test {
+		background: yellow;
+	}
+}
+
+/********************************************************************* laptop */
+@media (min-width: 768px) {
+	.responsive-test {
+		background: orange;
+		color: #fff;
+	}
+}
+
+/******************************************************************** desktop */
+@media (min-width: 1024px) {
+	.responsive-test {
+		background: blue;
+		color: #fff;
+	}
+}

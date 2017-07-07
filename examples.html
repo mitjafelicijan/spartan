@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+		<title>Spartan minimal UI kit</title>
+
+		<!-- css components only for testing -->
+		<link rel="stylesheet" href="src/reset.css">
+		<link rel="stylesheet" href="src/grid.css">
+		<link rel="stylesheet" href="src/typography.css">
+		<link rel="stylesheet" href="src/components.css">
+		<link rel="stylesheet" href="src/responsive.css">
+
+		<!-- css uikit when built -->
+		<!-- <link rel="stylesheet" href="src/spartan.min.css"> -->
+
+		<!-- only for example usage -->
+		<link rel="stylesheet" href="src/examples.css">
+
+	</head>
+
+	<body>
+
+		<section class="wrapper panel lite">
+			<h4 class="xbold">Spartan minimal UI kit</h4>
+			<p>View source for code implementation</p>
+			<p>Default font is <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import</p>
+			<p>Icons can be utf-8 characters → <a href="http://www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a> (also prefered by google)</p>
+		</section>
+
+		<div class="responsive-test">responsive test</div>
+
+
+
+		<section class="wrapper panel">
+
+			<h1>» Form elements</h1>
+
+			<hr>
+
+			<form method="post" accept-charset="utf-8">
+
+				<div class="row">
+					<div class="col-4">
+						<label for="text">Text</label>
+						<input type="text" id="text" required>
+					</div>
+					<div class="col-4">
+						<label for="password">Password</label>
+						<input type="password" id="password" required>
+					</div>
+					<div class="col-4">
+						<label for="email">Email</label>
+						<input type="email" id="email" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<label for="search">Search</label>
+						<input type="search" id="search" required>
+					</div>
+					<div class="col-4">
+						<label for="tel">Tel</label>
+						<input type="tel" id="tel" required>
+					</div>
+					<div class="col-4">
+						<label for="url">Url</label>
+						<input type="url" id="url" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<label for="number">Number</label>
+						<input type="number" id="number" required>
+					</div>
+					<div class="col-4">
+						<label for="range">Range</label>
+						<input type="range" id="range" required>
+					</div>
+					<div class="col-4">
+						<label for="color">Color</label>
+						<input type="color" id="color" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<label for="date">Date</label>
+						<input type="date" id="date" required>
+					</div>
+					<div class="col-4">
+						<label for="datetime-local">Datetime-local</label>
+						<input type="datetime-local" id="datetime-local" required>
+					</div>
+					<div class="col-4">
+						<label for="month">Month</label>
+						<input type="month" id="month" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<label for="time">Time</label>
+						<input type="time" id="time" required>
+					</div>
+					<div class="col-4">
+						<label for="week">Week</label>
+						<input type="week" id="week" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+						<input type="radio" id="radio" required> Example radio
+						<label for="radio">Radio</label>
+					</div>
+					<div class="col-6">
+						<input type="checkbox" id="checkbox" required> example checkbox
+						<label for="checkbox">Checkbox</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<input type="reset" class="button outline" value="Reset form values">
+						<input type="submit" class="button outline" value="Submit form">
+					</div>
+				</div>
+
+			</form>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Tables</h1>
+
+			<hr>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Surname</th>
+						<th class="right">Born</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Richard</td>
+						<td>Feynman</td>
+						<td class="right">1918</td>
+					</tr>
+					<tr>
+						<td>Isaac</td>
+						<td>Newton</td>
+						<td class="right">1643</td>
+					</tr>
+					<tr>
+						<td>Erwin</td>
+						<td>Schrödinger</td>
+						<td class="right">1887</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr>
+
+			<table class="border">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Surname</th>
+						<th class="right">Born</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Richard</td>
+						<td>Feynman</td>
+						<td class="right">1918</td>
+					</tr>
+					<tr>
+						<td>Isaac</td>
+						<td>Newton</td>
+						<td class="right">1643</td>
+					</tr>
+					<tr>
+						<td>Erwin</td>
+						<td>Schrödinger</td>
+						<td class="right">1887</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Images</h1>
+
+			<hr>
+
+			<img class="circle cover" src="/assets/feynman.jpg">
+			<img class="circle cover" src="/assets/newton.jpg">
+			<img class="circle cover" src="/assets/schrodinger.jpg">
+
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Buttons</h1>
+
+			<hr>
+
+			<a href="#" class="button large">Button »</a>
+			<button class="button large">Button »</button>
+			<span class="button large">Button »</span>
+			<div class="button large">Button »</div>
+			<input type="submit" class="button large" value="Button »">
+
+			<hr>
+
+			<a href="#" class="button outline large">Button »</a>
+			<button class="button outline large">Button »</button>
+			<span class="button outline large">Button »</span>
+			<div class="button outline large">Button »</div>
+			<input type="submit" class="button outline large" value="Button »">
+
+			<hr>
+
+			<a href="#" class="button">Button</a>
+			<button class="button">Button</button>
+			<span class="button">Button</span>
+			<div class="button">Button</div>
+			<input type="submit" class="button" value="Button »">
+
+			<hr>
+
+			<a href="#" class="button outline">Button</a>
+			<button class="button outline">Button</button>
+			<span class="button outline">Button</span>
+			<div class="button outline">Button</div>
+			<input type="submit" class="button outline" value="Button »">
+
+			<hr>
+
+			<a href="#" class="button small">Button</a>
+			<button class="button small">Button</button>
+			<span class="button small">Button</span>
+			<div class="button small">Button</div>
+			<input type="submit" class="button small" value="Button »">
+
+			<hr>
+
+			<a href="#" class="button outline small">Button</a>
+			<button class="button outline small">Button</button>
+			<span class="button outline small">Button</span>
+			<div class="button outline small">Button</div>
+			<input type="submit" class="button outline small" value="Button »">
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Navigation</h1>
+
+			<hr>
+
+			<nav>
+				<a href="#">Lorem ipsum</a>
+				<a href="#">Consectetur</a>
+				<a href="#">Adipisicing</a>
+				<a href="#">Quas nihil</a>
+			</nav>
+
+			<nav class="right">
+				<a href="#">Lorem ipsum</a>
+				<a href="#">Consectetur</a>
+				<a href="#">Adipisicing</a>
+				<a href="#">Quas nihil</a>
+			</nav>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Summary panel</h1>
+
+			<hr>
+
+			<details>
+				<summary>Click here to expand for details (closed by default)</summary>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+			</details>
+
+			<details open>
+				<summary>Click here to expand for details (opened by default)</summary>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+			</details>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Paragraphs</h1>
+
+			<hr>
+
+			<h5>Normal text</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Lite text (class: light)</h5>
+			<p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Bold text (class: bold)</h5>
+			<p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Bold text (class: xbold)</h5>
+			<p class="xbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Bold text (class: xxbold)</h5>
+			<p class="xxbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Italic text (class: italic)</h5>
+			<p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Strikethrough text (class: strikethrough)</h5>
+			<p class="strikethrough">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Underline text (class: underline)</h5>
+			<p class="underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+			<h5>Overline text (class: overline)</h5>
+			<p class="overline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper panel">
+
+			<h1>» Fluid grid</h1>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-3">col-3</div>
+				<div class="col-9">col-9</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+			</div>
+
+			<hr>
+
+			<div class="row nogutter">
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+			</div>
+
+		</section>
+
+		<hr class="divider">
+
+	</body>
+
+</html>
