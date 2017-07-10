@@ -72,6 +72,7 @@ nav.right a {
 	background: #ccc;
 	border: 2px solid transparent;
 	width: auto;
+	user-select: none;
 }
 	.button:hover {
 		background: #bbb;
@@ -139,6 +140,7 @@ label {
 	display: block;
 	font-weight: 500;
 	margin-bottom: 10px;
+	user-select: none;
 }
 
 input {

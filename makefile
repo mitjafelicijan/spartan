@@ -3,7 +3,7 @@ SHELL := /bin/bash
 provision:
 	sudo apt install -y yui-compressor
 
-local:
+server:
 	python -m SimpleHTTPServer 7777
 
 livereload:
