@@ -24,7 +24,16 @@ nav a {
 	font-weight: 500;
 }
 
-
+.icon {
+	display: inline-block;
+	font-size: 250%;
+	padding: 20px;
+	width: 100px;
+	text-align: center;
+	border: 1px dashed #ddd;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
 
 
 /************************************************************** mobile screen */

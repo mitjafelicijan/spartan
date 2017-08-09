@@ -28,6 +28,12 @@ hr.divider {
 	margin: 15px auto;
 }
 
+.border {
+	border: 2px solid #eee;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
 /******************************************************** details and summary */
 
 details {
@@ -141,15 +147,44 @@ label {
 	font-weight: 500;
 	margin-bottom: 10px;
 	user-select: none;
+	cursor: pointer;
 }
 
-input {
+input, select {
 	border: 2px solid #eee;
 	padding: 15px 20px;
 	display: inline-block;
 	width: 100%;
 }
 
-input[type="checkbox"] { width: auto; }
-input[type="radio"] { width: auto; }
+input[type="checkbox"] { width: auto; margin-right: 5px; }
+input[type="radio"] { width: auto; margin-right: 5px; }
 input[type="color"] { padding: 0; height: 50px; }
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0;
+	background-image:
+		linear-gradient(45deg, transparent 50%, #ccc 50%),
+		linear-gradient(135deg, #ccc 50%, transparent 50%),
+		linear-gradient(to right, #eee, #eee);
+	background-position:
+		calc(100% - 20px) 22px,
+		calc(100% - 15px) 22px,
+		calc(100% - 40px) 0px;
+	background-size:
+		5px 5px,
+		5px 5px,
+		2px 50px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+select::-ms-expand { display: block; }
+
+input[type="search"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
