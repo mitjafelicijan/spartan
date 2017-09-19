@@ -2,7 +2,7 @@
 
 ## Todo
 
-[ ] Font size fix when nesting elemenets
+[x] Font size fix when nesting elemenets
 
 ## Roadmap & todo
 
