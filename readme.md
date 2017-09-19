@@ -2,7 +2,11 @@
 
 ## Todo
 
-- [x] Font size fix when nesting elemenets
+- [x] Font size fix when nesting elemenets.
+- [x] Added add-label class that adds margin to the top when using forms.
+- [x] Added full-width class that adds width at 100%.
+- [x] Fix button height so that now matches input fields.
+- [ ] Split documentation into multiple sections.
 
 ## Roadmap & todo
 
