@@ -20,7 +20,7 @@ If I do frontend development I typically develop dashboards and some sort of bac
 
 ## Roadmap & Todo
 
-- [ ] [Popup dialog](https://www.w3schools.com/tags/tag_dialog.asp)
-- [ ] [Animated loader](https://www.w3schools.com/howto/howto_css_loader.asp)
+- [x] [Animated loader](https://www.w3schools.com/howto/howto_css_loader.asp)
 - [ ] [Tooltip](https://www.w3schools.com/howto/howto_css_tooltip.asp)
 - [ ] [Toggle switch](https://www.w3schools.com/howto/howto_css_switch.asp)
+- [ ] [Popup dialog](https://www.w3schools.com/tags/tag_dialog.asp)
