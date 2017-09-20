@@ -17,7 +17,7 @@ Why develop yet another UI kit? Well the answer to this question is quite simple
 If I do frontend development I typically develop dashboards and some sort of backends. And I need something very minimal because I add up my own project specific styles on top of it. And I noticed that when I used other kits I spent most of my time rewriting already provided components just to satisfy my needs. With this project I am trying to take back control and providing minimal experience as possible so you can add your own styling on top of it and not be bothered with battling style inheritance. I only use !important with font-smoothing and nowhere else!
 
 
-## Roadmap & todo
+## Roadmap & Todo
 
 - [ ] [Popup dialog](https://www.w3schools.com/tags/tag_dialog.asp)
 - [ ] [Animated loader](https://www.w3schools.com/howto/howto_css_loader.asp)
