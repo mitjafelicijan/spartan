@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+		<title>Spartan minimal UI kit</title>
+
+		<link rel="stylesheet" href="/src/dependencies.css">
+		<link rel="stylesheet" href="/src/reset.css">
+		<link rel="stylesheet" href="/src/grid.css">
+		<link rel="stylesheet" href="/src/typography.css">
+		<link rel="stylesheet" href="/src/components.css">
+		<link rel="stylesheet" href="/src/responsive.css">
+
+		<!-- css uikit when built
+		<link rel="stylesheet" href="//rawgit.com/mitjafelicijan/spartan/master/dist/spartan.min.css"> -->
+
+		<!-- styles used for documentation -->
+		<style>
+			body { padding-bottom: 150px; }
+			header { padding-top: 30px !important; }
+			.description { margin: 20px 0 30px 0; }
+			.embed { border: 2px solid #eee; margin-top: 20px; }
+		</style>
+
+	</head>
+
+	<body>
+
+		<header class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4 class="xbold">Spartan minimal UI kit</h4>
+					<p>Default font is <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import</p>
+					<p>Icons can be utf-8 characters ➜ <a href="http://www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a> (also prefered by google)</p>
+					<p>For more info contact me <a href="https://twitter.com/mitjafelicijan" target="_blank">@mitjafelicijan</a></p>
+				</div>
+			</div>
+		</header>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Table of contents</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<ul>
+						<li><a href="#simple-demonstration">Simple demonstration</a></li>
+						<li><a href="#boilerlate-example">Boilerlate example</a></li>
+						<li><a href="#typography">Typography</a></li>
+						<li><a href="#forms">Form elements</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+					</ul>
+				</div>
+				<div class="col-6">
+					<ul>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#navigation">Navigation</a></li>
+						<li><a href="#summary-panel">Summary panel</a></li>
+						<li><a href="#icons">Icons</a></li>
+						<li><a href="#fluid-grid">Fluid grid</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h3>Why yet another UI kit?</h3>
+					<p>Why develop yet another UI kit? Well the answer to this question is quite simple.
+						I am disappointed every time I dedicate my time to new kit when so many extra functionalities
+						are added that basically becomes unusable.</p>
+					<p>If I do frontend development I typically develop dashboards and some sort of backends.
+						And I need something very minimal because I add up my own project specific styles on
+						top of it. And I noticed that when I used other kits I spent most of my time
+						rewriting already provided components just to satisfy my needs. With this project
+						I am trying to take back control and providing minimal experience as possible so
+						you can add your own styling on top of it and not be bothered with battling style
+						inheritance. I only use !important with font-smoothing and nowhere else!</p>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h1><a name="simple-demonstration">Simple demonstration</a></h1>
+					<div class="description">
+						<p>Here you can see simple demo how grid is used and how form components apply to this form.
+							For further information on how to install framework please relate to
+							<a href="#boilerlate-example">boilerplate example</a>.</p>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/mitjafelicijan/ohxk3u7n/embed/result,html/?bodyColor=fff"></script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h1><a name="boilerlate-example">Boilerlate example</a></h1>
+					<div class="embed">
+						<script async src="//jsfiddle.net/mitjafelicijan/tv4u8y9m/embed/result,html,css/?bodyColor=fff"></script>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h5>Custom CSS tags for encapsulating main app</h5>
+					<table class="border">
+						<thead>
+							<tr>
+								<th width="150">Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>.wrapper</td>
+								<td>Used for setting width of app. Can be overwritten. Check CSS tab. This value can be in % and in px.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h5>Responsive options ➜ default options</h5>
+					<div class="embed">
+						<script async src="//jsfiddle.net/mitjafelicijan/yruL7quc/embed/css/?bodyColor=fff"></script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h1><a name="typography">Typography</a></h1>
+					<div class="embed">
+						<script async src="//jsfiddle.net/mitjafelicijan/gcufg3hk/embed/result,html/?bodyColor=fff"></script>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h5>Custom CSS tags for encapsulating main app</h5>
+					<table class="border">
+						<thead>
+							<tr>
+								<th width="200">Class</th>
+								<th>CSS equivalent</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td>.light</td>
+									<td>font-weight: 100;</td>
+								</tr>
+								<tr>
+									<td>.bold</td>
+									<td>font-weight: 500;</td>
+								</tr>
+								<tr>
+									<td>.xbold</td>
+									<td>font-weight: 700;</td>
+								</tr>
+								<tr>
+									<td>.xxbold</td>
+									<td>font-weight: 800;</td>
+								</tr>
+								<tr>
+									<td>.italic</td>
+									<td>font-style: italic;</td>
+								</tr>
+								<tr>
+									<td>.strikethrough</td>
+									<td>text-decoration: line-through;</td>
+								</tr>
+								<tr>
+									<td>.underline</td>
+									<td>text-decoration: underline;</td>
+								</tr>
+								<tr>
+									<td>.overline</td>
+									<td>text-decoration: overline;</td>
+								</tr>
+								<tr>
+									<td>.left</td>
+									<td>text-align: left;</td>
+								</tr>
+								<tr>
+									<td>.center</td>
+									<td>text-align: center;</td>
+								</tr>
+								<tr>
+									<td>.right</td>
+									<td>text-align: right;</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+	</body>
+
+</html>
