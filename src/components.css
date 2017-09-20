@@ -217,7 +217,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 		width: 20px;
 		height: 20px;
 	}
-	.loader.small {
+	.loader.large {
 		border-width: 15px;
 		width: 60px;
 		height: 60px;
