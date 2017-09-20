@@ -29,5 +29,6 @@ select::-ms-expand{display:block}ul{margin:20px 0}ul li{list-style-type:square;m
 .panel{margin:15px auto}.border{border:2px solid #eee;padding:20px;margin-bottom:15px}
 .add-label{margin-top:28px}.left{text-align:left}.center{text-align:center}.right{text-align:right}
 .top{vertical-align:top}.middle{vertical-align:middle}.bottom{vertical-align:bottom}
-.full-width{width:100%}@media(max-width:425px){.wrapper{padding:0 20px}}@media(min-width:425px){.wrapper{padding:0 30px}
-}@media(min-width:768px){.wrapper{padding:0 30px}}
+.full-width{width:100%}.hide{display:none}.show{display:block}@media(max-width:425px){.wrapper{padding:0 20px}
+}@media(min-width:425px){.wrapper{padding:0 30px}}@media(min-width:768px){.wrapper{padding:0 30px}
+}
