@@ -117,6 +117,7 @@ label {
 	display: block;
 	font-weight: 500;
 	margin-bottom: 10px;
+	font-family: inherit;
 	user-select: none;
 	cursor: pointer;
 }
@@ -124,6 +125,7 @@ label {
 input, select {
 	border: 2px solid #eee;
 	padding: 15px 20px;
+	font-family: inherit;
 	display: inline-block;
 	width: 100%;
 }
@@ -142,6 +144,7 @@ textarea {
 	border: 2px solid #eee;
 	padding: 20px;
 	display: inline-block;
+	font-family: inherit;
 	width: 100%;
 }
 
