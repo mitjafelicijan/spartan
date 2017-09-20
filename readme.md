@@ -2,6 +2,7 @@
 
 For more information check out this [demo](https://mitjafelicijan.com/projects/spartan).
 
+[Please report bug or enhancements her.](https://github.com/mitjafelicijan/spartan/issues/new)
 
 ## Installation
 
