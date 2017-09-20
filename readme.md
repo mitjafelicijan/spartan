@@ -10,7 +10,7 @@ If I do frontend development I typically develop dashboards and some sort of bac
 
 ## Installation
 
-```
+```html
 <link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/master/dist/spartan.min.css">
 ```
 
