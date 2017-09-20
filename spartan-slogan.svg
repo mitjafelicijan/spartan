@@ -240,24 +240,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:48.09731293px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="136.24246"
-       y="704.45538"
+       x="17.044462"
+       y="728.69904"
        id="text5730"><tspan
          id="tspan5732"
-         x="136.24246"
-         y="704.45538"
+         x="17.044462"
+         y="728.69904"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Bold'">Spartan minimal UI kit</tspan><tspan
-         x="136.24246"
-         y="746.72839"
+         x="17.044462"
+         y="770.97205"
          id="tspan5734"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.06081963px;font-family:Roboto;-inkscape-font-specification:Roboto">Take back control and make things</tspan></text>
     <g
-       transform="matrix(1.4930016,0,0,1.4930016,616.6483,643.95999)"
+       transform="matrix(1.4930016,0,0,1.4930016,497.4503,668.20365)"
        id="g6260"
        style="fill:#000000;fill-opacity:1">
       <polygon
          id="polygon6262"
-         points="50,16.563 26.473,26.396 26.68,53.719 29.542,60.118 29.329,68.971 44.67,90.188 41.132,56.059 33.868,52.385 33.058,45.729 44.401,51.563 42.947,62.563 50,68.563 57.091,62.563 55.675,51.563 67.018,45.729 66.208,52.385 58.943,56.059 55.404,90.188 70.748,68.971 70.523,60.118 73.377,53.719 73.564,26.396 "
+         points="26.473,26.396 26.68,53.719 29.542,60.118 29.329,68.971 44.67,90.188 41.132,56.059 33.868,52.385 33.058,45.729 44.401,51.563 42.947,62.563 50,68.563 57.091,62.563 55.675,51.563 67.018,45.729 66.208,52.385 58.943,56.059 55.404,90.188 70.748,68.971 70.523,60.118 73.377,53.719 73.564,26.396 50,16.563 "
          style="fill:#000000;fill-opacity:1" />
       <path
          id="path6264"
