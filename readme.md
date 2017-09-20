@@ -1,6 +1,6 @@
 # Spartan minimal UI kit
 
-## Check out [demo](https://mitjafelicijan.com/projects/spartan).
+Check out [demo](https://mitjafelicijan.com/projects/spartan).
 
 ## Why yet another UI kit?
 
