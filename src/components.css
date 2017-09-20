@@ -199,6 +199,35 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 	background: #eee;
 }
 
+/* animated loader */
+
+.loader {
+	display: block;
+	margin: 0 auto;
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #3498db;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: loader-spin 2s linear infinite;
+}
+
+	.loader.small {
+		border-width: 5px;
+		width: 20px;
+		height: 20px;
+	}
+	.loader.small {
+		border-width: 15px;
+		width: 60px;
+		height: 60px;
+	}
+
+@keyframes loader-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
 /* lists */
 
 ul {
