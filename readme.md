@@ -1,6 +1,6 @@
 # Spartan minimal UI kit
 
-For more information check out this [demo](https://mitjafelicijan.com/pub/spartan/).
+For more information check out this [demo](https://mitjafelicijan.com/sandbox/spartan/).
 
 [Report bug or enhancement »](https://github.com/mitjafelicijan/spartan/issues/new)
 
