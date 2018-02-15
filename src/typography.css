@@ -5,6 +5,13 @@ body {
 	font-size: 15px;
 }
 
+/************************************************************** common styles */
+
+strong, b { font-weight: 600; }
+em { font-style: italic; }
+u { text-decoration: underline; }
+s { text-decoration: line-through; }
+
 /********************************************************************** links */
 
 a {
