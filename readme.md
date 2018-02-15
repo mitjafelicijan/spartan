@@ -7,9 +7,12 @@ For more information check out this [demo](https://mitjafelicijan.com/sandbox/sp
 ## Installation
 
 ```html
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/master/dist/spartan.min.css">
-```
+<!-- version 1.1 -->
+<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.1/dist/spartan.min.css">
 
+<!-- version 1.0 -->
+<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.0/dist/spartan.min.css">
+```
 
 ## Why yet another UI kit?
 
