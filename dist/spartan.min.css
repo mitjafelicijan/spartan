@@ -42,4 +42,5 @@ input[type=range]:focus::-webkit-slider-runnable-track{background:#eee}ul{margin
 ul li{list-style-type:square;margin-left:40px;padding:10px 0;line-height:150%}.border{border:2px solid #eee;padding:20px;margin-bottom:15px}
 .add-label{margin-top:28px}.left{text-align:left}.right{text-align:right}.center{text-align:center;margin-left:auto;margin-right:auto}
 .top{vertical-align:top}.middle{vertical-align:middle}.bottom{vertical-align:bottom}
-.full-width{width:100%}.hide{display:none}.show{display:block}
+.full-width{width:100%}.hide{display:none}.show{display:block}th.ascend:after,th.descend:after{color:#bbb;font-size:80%;padding-left:5px}
+th.ascend:after{content:" \25B4"}th.descend:after{content:" \25BE"}

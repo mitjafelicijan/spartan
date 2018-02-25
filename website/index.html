@@ -32,7 +32,17 @@
 		<meta name="description" content="A lightweight UI kit for your applications and websites.">
 
 		<!-- css uikit -->
-		<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.5/dist/spartan.min.css">
+		<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.6/dist/spartan.min.css">
+
+		<!--<link rel="stylesheet" href="/src/dependencies.css">
+		<link rel="stylesheet" href="/src/reset.css">
+		<link rel="stylesheet" href="/src/grid.css">
+		<link rel="stylesheet" href="/src/typography.css">
+		<link rel="stylesheet" href="/src/components.css">-->
+
+		<!-- js uikit table filter and sorting -->
+		<script src="//cdn.rawgit.com/mitjafelicijan/spartan/v1.6/dist/spartan.min.js" defer></script>
+		<!--<script src="/src/spartan.js" defer></script>-->
 
 		<!-- website specific styles -->
 		<link rel="stylesheet" href="website.css">
@@ -62,7 +72,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<p>Small UI kit <strong>~5kb</strong> in size for application development.</p>
+					<p>Small UI kit <strong>~5kb</strong> in size (without filtering and sorting) for application development.</p>
 					<p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import.</p>
 					<p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a>.</p>
 					<p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
@@ -477,6 +487,18 @@
 						</label>
 					</div>
 				</div>
+				 <div class="row">
+					<div class="col-4">
+						<label for="radio">
+							<input type="radio" id="radio" required> Example radio
+						</label>
+					</div>
+					<div class="col-4">
+						<label for="checkbox">
+							<input type="checkbox" id="checkbox" required> Example checkbox
+						</label>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-12">
 						<input type="reset" class="button outline" value="Reset form values">
@@ -497,7 +519,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<table>
+					<table class="sortable">
 						<thead>
 						<tr>
 							<th>Name</th>
@@ -527,7 +549,51 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<table class="border">
+					<table class="border sortable">
+						<thead>
+						<tr>
+							<th>Name</th>
+							<th>Surname</th>
+							<th class="right">Born</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Richard</td>
+							<td>Feynman</td>
+							<td class="right">1918</td>
+						</tr>
+						<tr>
+							<td>Isaac</td>
+							<td>Newton</td>
+							<td class="right">1643</td>
+						</tr>
+						<tr>
+							<td>Erwin</td>
+							<td>Schrödinger</td>
+							<td class="right">1887</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- tables filter -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-8">
+					<h4>Table filter</h4>
+				</div>
+				<div class="col-4">
+					<input type="search" placeholder="Filter ..." data-bind-table="filter-table">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table class="border sortable filter-table">
 						<thead>
 						<tr>
 							<th>Name</th>

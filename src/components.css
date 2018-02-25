@@ -254,3 +254,19 @@ ul {
 
 .hide { display: none; }
 .show { display: block; }
+
+/* sortable table */
+
+th.ascend:after, th.descend:after {
+	color: #bbb;
+	font-size: 80%;
+	padding-left: 5px;
+}
+
+th.ascend:after {
+	content: " \25B4";
+}
+
+th.descend:after {
+	content: " \25BE";
+}
