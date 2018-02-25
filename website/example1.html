@@ -1,0 +1,126 @@
+<!--
+
+  - Thanks for checking source code.
+  - You can use this source as a reference on how to use UI KIT.
+  - If there are any questions contant me @mitjafelicijan.
+
+--><!doctype html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+		<title>Spartan minimal UI kit for your applications</title>
+
+		<!-- uikit -->
+		<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.css">
+		<script src="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.js" defer></script>
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="favicon.png">
+
+		<!-- global site tag (gtag.js) - google analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12769079-13"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag("js", new Date());
+			gtag("config", "UA-12769079-13");
+		</script>
+
+	</head>
+
+	<body>
+
+		<header class="wrapper">
+			<div class="row">
+				<div class="col-6">
+					<nav>
+						<a href="#">Example application</a>
+					</nav>
+				</div>
+				<div class="col-6 hide-sm">
+					<nav class="right">
+						<a href="#" class="button small outline">Devices</a>
+						<a href="#" class="button small outline">Logout</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-8 col-6-md">
+					<h2>Device list</h2>
+				</div>
+				<div class="col-4 col-6-md">
+					<input type="search" placeholder="Filter ..." data-bind-table="devices-filter">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table class="border sortable devices-filter">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th class="right">Architecture</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Arduino (Atmel AVR)</td>
+								<td class="right">8-bit</td>
+							</tr>
+							<tr>
+								<td>Raspberry PI</td>
+								<td class="right">ARM</td>
+							</tr>
+							<tr>
+								<td>NodeMCU</td>
+								<td class="right">8-bit</td>
+							</tr>
+							<tr>
+								<td>Teensy</td>
+								<td class="right">8-bit</td>
+							</tr>
+							<tr>
+								<td>BeagleBone</td>
+								<td class="right">ARM</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h2>Add new device</h2>
+				</div>
+			</div>
+			<form method="post" accept-charset="utf-8">
+				<div class="row">
+					<div class="col-6">
+						<label for="device-name">Device name</label>
+						<input type="text" id="device-name" required>
+					</div>
+					<div class="col-4">
+						<label for="device-architecture">Device architecture</label>
+						<input type="text" id="device-architecture" required>
+					</div>
+					<div class="col-2">
+						<input type="submit" value="Add" class="button full-width outline empty-label">
+					</div>
+				</div>
+			</form>
+		</section>
+
+	</body>
+
+</html>

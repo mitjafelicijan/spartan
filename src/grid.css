@@ -32,6 +32,13 @@
 	}
 
 	[class*="col-"] { width: 100%; }
+
+	.hide-sm { display: none; }
+	.show-sm { display: block; }
+
+	.left-sm { text-align: left; }
+	.right-sm { text-align: right; }
+	.center-sm { text-align: center; margin-left: auto; margin-right: auto; }
 }
 
 @media only screen and (min-width: 425px) { /* tablet */
@@ -51,6 +58,13 @@
 	.col-10-md { width: 83.33%; }
 	.col-11-md { width: 91.66%; }
 	.col-12-md { width: 100%; }
+
+	.hide-md { display: none; }
+	.show-md { display: block; }
+
+	.left-md { text-align: left; }
+	.right-md { text-align: right; }
+	.center-md { text-align: center; margin-left: auto; margin-right: auto; }
 }
 
 @media only screen and (min-width: 1024px) { /* desktop */
