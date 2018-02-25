@@ -32,7 +32,7 @@
 		<meta name="description" content="A lightweight UI kit for your applications and websites.">
 
 		<!-- css uikit -->
-		<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.2/dist/spartan.min.css">
+		<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.3/dist/spartan.min.css">
 
 		<!-- website specific styles -->
 		<link rel="stylesheet" href="website.css">
@@ -45,11 +45,9 @@
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-12769079-13');
+			gtag("js", new Date());
+			gtag("config", "UA-12769079-13");
 		</script>
-
 
 	</head>
 
@@ -59,7 +57,7 @@
 		<header class="wrapper">
 			<div class="row">
 				<div class="col-12">
-					<h1>Spartan UI KIT</h1>
+					<h1 class="xxbold">Spartan UI KIT</h1>
 				</div>
 			</div>
 			<div class="row">
@@ -96,7 +94,7 @@
 
 		<hr class="divider">
 
-		<!-- responsive grid -->
+		<!-- minimal example -->
 		<section class="wrapper">
 			<div class="row">
 				<div class="col-12">
@@ -124,8 +122,8 @@
 		</section>
 		<section class="wrapper debug">
 			<div class="row">
-				<div class="col-10 col-4-m">col-10</div>
-				<div class="col-2 col-8-m">col-2</div>
+				<div class="col-10 col-4-sm">col-10</div>
+				<div class="col-2 col-8-sm">col-2</div>
 			</div>
 			<br>
 			<div class="row">
@@ -195,7 +193,7 @@
 						<li>By default grid system is 960px in width and shrinks with page width.</li>
 						<li>Wrapper sets max width size of containers. If no <code>.wrapper</code> is present everything expands to 100% of page.</li>
 						<li>You can resize wrapper by changing <code>.wrapper {max-width: 1200px}</code>.</li>
-						<li>By default this grid is 12 column based (<code>col-[1..12]</code>). But is also supports tablet an mobile responsive option. Mobile option sets every column to 100%. Option in the middle is set between mobile and desktop. You can use it by setting additional class attribute (<code>col-[1..12]-m</code>).</li>
+						<li>By default this grid is 12 column based (<code>col-[1..12]</code>). But is also supports tablet an mobile responsive option. Mobile option sets every column to 100%. Option in the middle is set between mobile and desktop. You can use it by setting additional class attribute (<code>col-[1..12]-sm</code>).</li>
 					</ul>
 				</div>
 			</div>
@@ -211,7 +209,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-5 col-6-m">
+				<div class="col-5 col-6-sm">
 					<label for="select">Select your favorite scientist</label>
 					<select id="select">
 						<option>Richard Feynman (theoretical physicist)</option>
@@ -219,14 +217,14 @@
 						<option>Erwin Schrödinger (physicist)</option>
 					</select>
 				</div>
-				<div class="col-3 col-6-m">
+				<div class="col-3 col-6-sm">
 					<label for="email">Email</label>
 					<input type="email" required>
 				</div>
-				<div class="col-2 col-6-m">
+				<div class="col-2 col-6-sm">
 					<a href="#" class="button add-label full-width">Button</a>
 				</div>
-				<div class="col-2 col-6-m">
+				<div class="col-2 col-6-sm">
 					<a href="#" class="button outline add-label full-width">Button</a>
 				</div>
 			</div>
@@ -490,7 +488,7 @@
 
 		<hr class="divider">
 
-		<!-- table -->
+		<!-- tables -->
 		<section class="wrapper">
 			<div class="row">
 				<div class="col-12">

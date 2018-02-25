@@ -1,0 +1,18 @@
+[debug] [2018-02-25T14:11:40.399Z] ----------------------------------------------------------------------
+[debug] [2018-02-25T14:11:40.400Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2018-02-25T14:11:40.400Z] CLI Version:   3.17.4
+[debug] [2018-02-25T14:11:40.400Z] Platform:      linux
+[debug] [2018-02-25T14:11:40.400Z] Node Version:  v8.9.4
+[debug] [2018-02-25T14:11:40.400Z] Time:          Sun Feb 25 2018 15:11:40 GMT+0100 (CET)
+[debug] [2018-02-25T14:11:40.400Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-25T14:11:40.406Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-25T14:11:40.406Z] > authorizing via signed-in user
+[debug] [2018-02-25T14:11:40.408Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/spartan-ui  
+  
+ Sun Feb 25 2018 15:11:40 GMT+0100 (CET)
+[debug] [2018-02-25T14:11:41.425Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T14:11:41.427Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/spartan-ui/tokens  
+  
+ Sun Feb 25 2018 15:11:41 GMT+0100 (CET)
+[debug] [2018-02-25T14:11:42.177Z] <<< HTTP RESPONSE 200
