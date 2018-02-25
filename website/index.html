@@ -221,13 +221,16 @@
 		<!-- helper classes  -->
 		<section class="wrapper">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-8">
 					<h4>Helper classes</h4>
+				</div>
+				<div class="col-4">
+					<input type="search" placeholder="Filter ..." data-bind-table="helpers-filter">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<table class="border">
+					<table class="border sortable helpers-filter">
 						<thead>
 							<tr>
 								<th width="200">Class name</th>
