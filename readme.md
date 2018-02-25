@@ -7,17 +7,9 @@ For more information check out this [https://spartan-ui.com](https://spartan-ui.
 ## Installation
 
 ```html
-<!-- version 1.5 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.5/dist/spartan.min.css">
-
-<!-- version 1.4 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.4/dist/spartan.min.css">
-
-<!-- version 1.2 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.2/dist/spartan.min.css">
-
-<!-- version 1.1 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.1/dist/spartan.min.css">
+<!-- version 1.7 -->
+<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.css">
+<script src="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.js" defer></script>
 
 <!-- version 1.0 -->
 <link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.0/dist/spartan.min.css">
