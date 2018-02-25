@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+		<title>Spartan minimal UI kit for your applications</title>
+
+		<meta name="description" content="A lightweight UI kit for your applications and websites.">
+
+		<!-- css uikit development mode -->
+		<link rel="stylesheet" href="/src/dependencies.css">
+		<link rel="stylesheet" href="/src/reset.css">
+		<link rel="stylesheet" href="/src/grid.css">
+		<link rel="stylesheet" href="/src/typography.css">
+		<link rel="stylesheet" href="/src/components.css">
+
+		<!-- website specific styles -->
+		<link rel="stylesheet" href="website.css">
+
+		<!-- global site tag (gtag.js) - google analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12769079-13"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-12769079-13');
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<!-- basic info -->
+		<header class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h1>Spartan UI KIT</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Small UI kit <strong>~5kb</strong> in size for application development.</p>
+					<p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import</p>
+					<p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a></p>
+					<p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
+				</div>
+			</div>
+		</header>
+
+		<hr class="divider">
+
+		<!-- what is spartan -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h3>Why yet another UI kit?</h3>
+					<p>Why develop yet another UI kit? Well the answer to this question is quite simple.
+						I am disappointed every time I dedicate my time to new kit when so many extra functionalities
+						are added that basically becomes unusable.</p>
+					<p>If I do frontend development I typically develop dashboards and some sort of backends.
+						And I need something very minimal because I add up my own project specific styles on
+						top of it. And I noticed that when I used other kits I spent most of my time
+						rewriting already provided components just to satisfy my needs. With this project
+						I am trying to take back control by providing as minimal experience as possible so
+						you can add your own styling on top of it and not be bothered with battling style
+						inheritance.</p>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h3>Grid system</h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- responsive grid -->
+		<section class="wrapper debug">
+			<div class="row">
+				<div class="col-10 col-4-m">col-10</div>
+				<div class="col-2 col-8-m">col-2</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-12">col-12</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-6">col-6</div>
+				<div class="col-4">col-4</div>
+				<div class="col-2">col-2</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-2">col-2</div>
+				<div class="col-5">col-5</div>
+				<div class="col-2">col-2</div>
+				<div class="col-3">col-3</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-2">col-2</div>
+				<div class="col-2">col-2</div>
+				<div class="col-2">col-2</div>
+				<div class="col-2">col-2</div>
+				<div class="col-2">col-2</div>
+				<div class="col-2">col-2</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-4">col-4</div>
+				<div class="col-4">col-4</div>
+				<div class="col-4">col-4</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-6">col-6</div>
+				<div class="col-6">col-6</div>
+			</div>
+		</section>
+
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li>By default grid system is 960px in width and shrinks with page width.</li>
+						<li>Wrapper sets max width size of containers. If no <code>.wrapper</code> is present everything expands to 100% of page.</li>
+						<li>You can resize wrapper by changing <code>.wrapper {max-width: 1200px}</code>.</li>
+						<li>By default this grid is 12 column based (<code>col-[1..12]</code>). But is also supports tablet an mobile responsive option. Mobile option sets every column to 100%. Option in the middle is set between mobile and desktop. You can use it by setting additional class attribute (<code>col-[1..12]-m</code>).</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- author etc -->
+		<footer class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<p>Made by <a href="//mitjafelicijan.com" target="_blank">Mitja Felicijan</a> ➜ <a href="//twitter.com/mitjafelicijan">@mitjafelicijan</a></p>
+					<p>Contribute on <a href="//github.com/mitjafelicijan/spartan" target="_blank">Github</a></p>
+					<p>Open source under the <a href="//opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

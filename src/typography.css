@@ -1,28 +1,27 @@
-
 body {
 	font-family: "Roboto", sans-serif;
 	color: #222;
 	font-size: 15px;
 }
 
-/************************************************************** common styles */
+/* common styles */
 
 strong, b { font-weight: 600; }
 em { font-style: italic; }
 u { text-decoration: underline; }
 s { text-decoration: line-through; }
 
-/********************************************************************** links */
+/* links */
 
 a {
 	color: inherit;
 	font-weight: 500;
 }
 
-/******************************************************************* headings */
+/* headings */
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 15px auto;
+	margin: 10px auto;
 	font-weight: 500;
 	display: block;
 }
@@ -34,17 +33,16 @@ h4 { font-size: 140%; }
 h5 { font-size: 120%; }
 h6 { font-size: 100%; }
 
-/***************************************************************** paragraphs */
+/* paragraphs */
 
 p {
 	display: block;
 	margin: 15px auto;
-	line-height: 150%;
-	color: #555;
+	line-height: 160%;
+	color: inherit;
 }
 
-/********************************************************* common text styles */
-
+/* common text styles */
 
 .light { font-weight: 100; }
 .bold { font-weight: 500; }
@@ -54,3 +52,4 @@ p {
 .strikethrough { text-decoration: line-through; }
 .underline { text-decoration: underline; }
 .overline { text-decoration: overline; }
+.justify { text-align: justify; }

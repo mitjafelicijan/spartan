@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+.debug [class*="col-"] {
+	background: beige;
+	border-color: lightpink;
+}
+
+code {
+	font-family: monospace;
+	background: #eee;
+	font-size: 90%;
+	padding: 4px 8px;
+	font-weight: 600;
+}
+
+header {
+
+}
