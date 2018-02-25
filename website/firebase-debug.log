@@ -1,0 +1,45 @@
+[debug] [2018-02-25T22:30:27.544Z] ----------------------------------------------------------------------
+[debug] [2018-02-25T22:30:27.546Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2018-02-25T22:30:27.546Z] CLI Version:   3.17.4
+[debug] [2018-02-25T22:30:27.546Z] Platform:      linux
+[debug] [2018-02-25T22:30:27.546Z] Node Version:  v8.9.4
+[debug] [2018-02-25T22:30:27.546Z] Time:          Sun Feb 25 2018 23:30:27 GMT+0100 (CET)
+[debug] [2018-02-25T22:30:27.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-25T22:30:27.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-25T22:30:27.552Z] > authorizing via signed-in user
+[debug] [2018-02-25T22:30:27.553Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-25T22:30:27.553Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ArWGlXGQN-VLQlSTaid_OIBSUaRevk763vGJnIBPiT4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Feb 25 2018 23:30:27 GMT+0100 (CET)
+[debug] [2018-02-25T22:30:27.778Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T22:30:27.781Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/spartan-ui  
+  
+ Sun Feb 25 2018 23:30:27 GMT+0100 (CET)
+[debug] [2018-02-25T22:30:28.652Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T22:30:28.655Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/spartan-ui/tokens  
+  
+ Sun Feb 25 2018 23:30:28 GMT+0100 (CET)
+[debug] [2018-02-25T22:30:29.323Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'spartan-ui'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing ./ directory for upload...
+[debug] [2018-02-25T22:30:30.157Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/spartan-ui/uploads/-L6E4fyMrpEbAXd9xR1z?fileCount=7&message=  
+  
+ Sun Feb 25 2018 23:30:30 GMT+0100 (CET)
+[debug] [2018-02-25T22:30:31.293Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T22:30:31.294Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 7 files uploaded successfully
+[debug] [2018-02-25T22:30:32.057Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/spartan-ui/releases  
+ { hosting: 
+   { public: './',
+     version: '-L6E4fyMrpEbAXd9xR1z',
+     prefix: '-L6E4fyMrpEbAXd9xR1z/',
+     manifest: [] } } 
+ Sun Feb 25 2018 23:30:32 GMT+0100 (CET)
