@@ -1,4 +1,11 @@
-<!doctype html>
+<!--
+
+  - Thanks for checking source code.
+  - You can use this source as a reference on how to use UI KIT.
+  - If there are any questions contant me @mitjafelicijan.
+
+
+--><!doctype html>
 <html>
 
 	<head>
@@ -51,6 +58,7 @@
 					<p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import</p>
 					<p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a></p>
 					<p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
+					<p><strong>View source for details</strong></p>
 				</div>
 			</div>
 		</header>
@@ -78,6 +86,25 @@
 
 		<hr class="divider">
 
+		<!-- responsive grid -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h3>Minimal example system</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="embed">
+						<script async src="//jsfiddle.net/mitjafelicijan/ty0L9vmL/embed/result,html,css/?bodyColor=fff"></script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- responsive grid -->
 		<section class="wrapper">
 			<div class="row">
 				<div class="col-12">
@@ -85,8 +112,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- responsive grid -->
 		<section class="wrapper debug">
 			<div class="row">
 				<div class="col-10 col-4-m">col-10</div>
@@ -168,11 +193,428 @@
 
 		<hr class="divider">
 
+		<!-- simple form and table  -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Simple form and table example</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-5 col-6-m">
+					<label for="select">Select your favorite scientist</label>
+					<select id="select">
+						<option>Richard Feynman (theoretical physicist)</option>
+						<option>Isaac Newton (mathematician, astronomer, and physicist)</option>
+						<option>Erwin Schrödinger (physicist)</option>
+					</select>
+				</div>
+				<div class="col-3 col-6-m">
+					<label for="email">Email</label>
+					<input type="email" required>
+				</div>
+				<div class="col-2 col-6-m">
+					<a href="#" class="button add-label full-width">Button</a>
+				</div>
+				<div class="col-2 col-6-m">
+					<a href="#" class="button outline add-label full-width">Button</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+				<table class="border">
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Surname</th>
+						<th class="right">Born</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Richard</td>
+						<td>Feynman</td>
+						<td class="right">1918</td>
+					</tr>
+					<tr>
+						<td>Isaac</td>
+						<td>Newton</td>
+						<td class="right">1643</td>
+					</tr>
+					<tr>
+						<td>Erwin</td>
+						<td>Schrödinger</td>
+						<td class="right">1887</td>
+					</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- typography  -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Typography</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+
+					<h5>Normal text</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Lite text (class: light)</h5>
+					<p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Bold text (class: bold)</h5>
+					<p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Bold text (class: xbold)</h5>
+					<p class="xbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Bold text (class: xxbold)</h5>
+					<p class="xxbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Italic text (class: italic)</h5>
+					<p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Strikethrough text (class: strikethrough)</h5>
+					<p class="strikethrough">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Underline text (class: underline)</h5>
+					<p class="underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h5>Overline text (class: overline)</h5>
+					<p class="overline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- buttons  -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Buttons</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button large">Button »</a>
+					<button class="button large">Button »</button>
+					<span class="button large">Button »</span>
+					<div class="button large">Button »</div>
+					<input type="submit" class="button large" value="Button »">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button outline large">Button »</a>
+					<button class="button outline large">Button »</button>
+					<span class="button outline large">Button »</span>
+					<div class="button outline large">Button »</div>
+					<input type="submit" class="button outline large" value="Button »">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button">Button</a>
+					<button class="button">Button</button>
+					<span class="button">Button</span>
+					<div class="button">Button</div>
+					<input type="submit" class="button" value="Button »">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button outline">Button</a>
+					<button class="button outline">Button</button>
+					<span class="button outline">Button</span>
+					<div class="button outline">Button</div>
+					<input type="submit" class="button outline" value="Button »">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button small">Button</a>
+					<button class="button small">Button</button>
+					<span class="button small">Button</span>
+					<div class="button small">Button</div>
+					<input type="submit" class="button small" value="Button »">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="#" class="button outline small">Button</a>
+					<button class="button outline small">Button</button>
+					<span class="button outline small">Button</span>
+					<div class="button outline small">Button</div>
+					<input type="submit" class="button outline small" value="Button »">
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- form elements  -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Form elements</h4>
+				</div>
+			</div>
+			<form method="post" accept-charset="utf-8">
+				<div class="row">
+					<div class="col-4">
+						<label for="text">Text</label>
+						<input type="text" id="text" required>
+					</div>
+					<div class="col-4">
+						<label for="password">Password</label>
+						<input type="password" id="password" required>
+					</div>
+					<div class="col-4">
+						<label for="email">Email</label>
+						<input type="email" id="email" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<label for="search">Search</label>
+						<input type="search" id="search" required>
+					</div>
+					<div class="col-4">
+						<label for="tel">Tel</label>
+						<input type="tel" id="tel" required>
+					</div>
+					<div class="col-4">
+						<label for="url">Url</label>
+						<input type="url" id="url" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<label for="number">Number</label>
+						<input type="number" id="number" required>
+					</div>
+					<div class="col-4">
+						<label for="range">Range</label>
+						<input type="range" id="range" step="1" min="0" max="10" required>
+					</div>
+					<div class="col-4">
+						<label for="color">Color</label>
+						<input type="color" id="color" value="#eeeeee" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<label for="date">Date</label>
+						<input type="date" id="date" required>
+					</div>
+					<div class="col-4">
+						<label for="datetime-local">Datetime-local</label>
+						<input type="datetime-local" id="datetime-local" required>
+					</div>
+					<div class="col-4">
+						<label for="month">Month</label>
+						<input type="month" id="month" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<label for="time">Time</label>
+						<input type="time" id="time" required>
+					</div>
+					<div class="col-4">
+						<label for="week">Week</label>
+						<input type="week" id="week" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<label for="select">Select</label>
+						<select id="select">
+						<option>Richard Feynman</option>
+						<option>Isaac Newton</option>
+						<option>Erwin Schrödinger</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<label for="datalist">Datalist</label>
+						<input id="datalist" list="physicists" required>
+						<datalist id="physicists">
+						<option value="Richard Feynman">
+							<option value="Isaac Newton">
+							<option value="Erwin Schrödinger">
+						</datalist>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8">
+						<label for="textarea">
+							<textarea id="textarea"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<input type="reset" class="button outline" value="Reset form values">
+						<input type="submit" class="button outline" value="Submit form">
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<hr class="divider">
+
+		<!-- table -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Tables</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table>
+						<thead>
+						<tr>
+							<th>Name</th>
+							<th>Surname</th>
+							<th class="right">Born</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Richard</td>
+							<td>Feynman</td>
+							<td class="right">1918</td>
+						</tr>
+						<tr>
+							<td>Isaac</td>
+							<td>Newton</td>
+							<td class="right">1643</td>
+						</tr>
+						<tr>
+							<td>Erwin</td>
+							<td>Schrödinger</td>
+							<td class="right">1887</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table class="border">
+						<thead>
+						<tr>
+							<th>Name</th>
+							<th>Surname</th>
+							<th class="right">Born</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Richard</td>
+							<td>Feynman</td>
+							<td class="right">1918</td>
+						</tr>
+						<tr>
+							<td>Isaac</td>
+							<td>Newton</td>
+							<td class="right">1643</td>
+						</tr>
+						<tr>
+							<td>Erwin</td>
+							<td>Schrödinger</td>
+							<td class="right">1887</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- navigation -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h5>Left navigation</h5>
+					<nav>
+						<a href="#">Lorem ipsum</a>
+						<a href="#">Consectetur</a>
+						<a href="#">Adipisicing</a>
+						<a href="#">Quas nihil</a>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h5>Right navigation</h5>
+					<nav class="right">
+						<a href="#">Lorem ipsum</a>
+						<a href="#">Consectetur</a>
+						<a href="#">Adipisicing</a>
+						<a href="#">Quas nihil</a>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
+		<!-- summary -->
+		<section class="wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h4>Summary panel</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<details>
+						<summary>Click here to expand for details (closed by default)</summary>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+					</details>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<details open>
+						<summary>Click here to expand for details (opened by default)</summary>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<hr class="divider">
+
 		<!-- author etc -->
 		<footer class="wrapper">
 			<div class="row">
 				<div class="col-12">
-					<p>Made by <a href="//mitjafelicijan.com" target="_blank">Mitja Felicijan</a> ➜ <a href="//twitter.com/mitjafelicijan">@mitjafelicijan</a></p>
+					<p>Made by <a href="//mitjafelicijan.com" target="_blank">Mitja Felicijan</a> ➜ <a href="//twitter.com/mitjafelicijan" target="_blank">@mitjafelicijan</a></p>
 					<p>Contribute on <a href="//github.com/mitjafelicijan/spartan" target="_blank">Github</a></p>
 					<p>Open source under the <a href="//opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
 				</div>

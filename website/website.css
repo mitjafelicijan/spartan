@@ -17,3 +17,7 @@ code {
 	padding: 4px 8px;
 	font-weight: 600;
 }
+
+.embed {
+	border: 2px solid #eee;
+}
