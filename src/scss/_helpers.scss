@@ -21,3 +21,13 @@
   padding: 20px;
   margin-bottom: 15px;
 }
+
+.empty-label {
+  margin-top: 28px;
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    & {
+      margin-top: initial;
+    }
+  }
+}

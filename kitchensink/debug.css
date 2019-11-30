@@ -24,11 +24,24 @@
   margin-right: 5px;
 }
 
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.three-columns > div {
+  /*background: chartreuse;*/
+}
+
 @media only screen and (max-width: 425px) { /* mobile */
   .wrapper {
     padding: 0 20px;
   }
   .button {
     margin-bottom: 10px;
+  }
+  .three-columns {
+    grid-template-columns: 1fr;
   }
 }

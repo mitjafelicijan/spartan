@@ -63,31 +63,31 @@
 
       <h1 class="headline">🤯 Typography</h1>
 
-      <h5>Normal text</h5>
+      <h5>⌥ Normal text</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Lite text</h5>
+      <h5>⌥ Lite text</h5>
       <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text</h5>
+      <h5>⌥ Bold text</h5>
       <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text `xbold`</h5>
+      <h5>⌥ Bold text `xbold`</h5>
       <p class="xbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text `xxbold`</h5>
+      <h5>⌥ Bold text `xxbold`</h5>
       <p class="xxbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Italic text</h5>
+      <h5>⌥ Italic text</h5>
       <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Strikethrough text</h5>
+      <h5>⌥ Strikethrough text</h5>
       <p class="strikethrough">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Underline text</h5>
+      <h5>⌥ Underline text</h5>
       <p class="underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Overline text</h5>
+      <h5>⌥ Overline text</h5>
       <p class="overline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
       <h1>Heading 1</h1>
@@ -265,7 +265,7 @@
       <progress value="40" max="100"></progress>
 
       <h5 class="margin-small">⌥ Progress with label (webkit only)</h5>
-      <progress max="100" value="50" data-label="50% Complete"></progress>
+      <progress value="60" max="100" data-label="60% Complete"></progress>
 
     </section>
 
@@ -301,7 +301,7 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🏋🏻‍♂️ Buttons</h1>
+      <h1 class="headline">👆 Buttons</h1>
 
       <h5 class="margin-small">⌥ Large buttons</h5>
       <a href="#" class="button large">Button »</a>
@@ -344,6 +344,94 @@
       <span class="button outline small">Button</span>
       <div class="button outline small">Button</div>
       <input type="submit" class="button outline small" value="Button »">
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- FORMS -->
+
+    <section class="wrapper margin-large">
+
+      <h1 class="headline">👯‍♀️ Form elements</h1>
+
+      <form autocomplete="off">
+        <div class="three-columns">
+          <div>
+            <label for="text">Text</label>
+            <input type="text" id="text">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" autocomplete="current-password" id="password">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" autocomplete="email" id="email">
+          </div>
+
+          <div>
+            <label for="search">Search</label>
+            <input type="search" id="search">
+          </div>
+          <div>
+            <label for="tel">Tel</label>
+            <input type="tel" autocomplete="tel" id="tel">
+          </div>
+          <div>
+            <label for="url">Url</label>
+            <input type="url" id="url">
+          </div>
+
+          <div>
+            <label for="number">Number</label>
+            <input type="number" id="number">
+          </div>
+          <div>
+            <label for="range">Range</label>
+            <input type="range" id="range" step="1" min="0" max="10">
+          </div>
+          <div>
+            <label for="color">Color</label>
+            <input type="color" id="color" value="#eeeeee">
+          </div>
+
+          <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+          <div>
+            <label for="datetime-local">Datetime-local</label>
+            <input type="datetime-local" id="datetime-local" required>
+          </div>
+          <div>
+            <label for="month">Month</label>
+            <input type="month" id="month" required>
+          </div>
+
+          <div>
+            <label for="select">Select</label>
+            <select id="select">
+              <option>Richard Feynman</option>
+              <option>Isaac Newton</option>
+              <option>Erwin Schrödinger</option>
+            </select>
+          </div>
+          <div>
+            <label for="radio" class="empty-label">
+              <input type="radio" id="radio" required> Example radio
+            </label>
+          </div>
+          <div>
+            <label for="checkbox" class="empty-label">
+              <input type="checkbox" id="checkbox" required> Example checkbox
+            </label>
+          </div>
+        </div>
+        <label for="textarea">
+          <textarea id="textarea"></textarea>
+        </label>
+      </form>
 
     </section>
 
@@ -394,8 +482,6 @@
     </section>
 
     <hr class="divider">
-
-
 
     <!-- AUTHOR etc -->
     <footer class="wrapper">
