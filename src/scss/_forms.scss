@@ -43,6 +43,7 @@ input, select {
     border-radius: 50%;
     cursor: pointer;
     margin-top: -6px;
+    -webkit-appearance: none;
   }
 
   &[type=range] {
