@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  .enable-dark-mode {
+    background-color: $dark;
+    color: $white;
+
+    progress {
+      color: $dark;
+    }
+  }
+}

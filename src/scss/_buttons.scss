@@ -1,0 +1,45 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  font-size: 100%;
+  font-weight: 600;
+  padding: 15px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #ccc;
+  border: 2px solid transparent;
+  width: auto;
+  user-select: none;
+  text-align: center;
+  height: 50px;
+
+  &:hover {
+    background: #bbb;
+  }
+
+  &.outline {
+    border: 2px solid #ddd;
+    background: #fff;
+
+    &:hover {
+      border-color: #999;
+    }
+  }
+
+  &.small {
+    padding: 8px 15px;
+    font-size: 85%;
+    height: auto;
+  }
+
+  &.large {
+    padding: 15px 35px;
+    font-size: 110%;
+    height: auto;
+  }
+
+}

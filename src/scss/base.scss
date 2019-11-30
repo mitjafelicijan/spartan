@@ -1,12 +1,21 @@
 @charset "utf-8";
 
 @import "variables";
+
 @import "reset";
 @import "wrappers";
 @import "dependencies";
 @import "typography";
-@import "dividers";
-@import "details";
 
-// at bottom because it overrides styles
+@import "dividers";
+@import "buttons";
+@import "details";
+@import "forms";
+@import "tables";
+@import "progress";
+@import "navigation";
+
+@import "dark-mode";
+@import "helpers";
+@import "responsive";
 @import "margins";

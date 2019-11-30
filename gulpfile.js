@@ -16,12 +16,14 @@ gulp.task('sass', () => gulp.src('src/scss/base.scss')
   .pipe(autoprefixer({ cascade: false }))
   .pipe(rename(`spartan-${package.version}.css`))
   .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('kitchensink'))
 );
 
 gulp.task('javascript', () => gulp.src('src/javascript/**/*.js')
   .pipe(concat(`spartan-${package.version}.js`))
   .pipe(terser())
   .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('kitchensink'))
 );
 
 gulp.task('serve', () => {
@@ -34,8 +36,7 @@ gulp.task('serve', () => {
       directory: true,
     },
     files: [
-      'dist/**/*.css',
-      'dist/**/*.js',
+      'dist/**/*',
       'kitchensink/**/*'
     ],
   });

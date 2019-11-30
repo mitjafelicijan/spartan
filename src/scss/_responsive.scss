@@ -1,0 +1,29 @@
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+// mobile
+@media only screen and (max-width: $breakpoint-mobile) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+}
+
+// tablet
+@media only screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mobile) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+
+  .show-on-tablet {
+    display: block !important;
+  }
+}

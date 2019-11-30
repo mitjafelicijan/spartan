@@ -2,20 +2,30 @@
 .debug {
   border: 1px dotted lightcoral;
   margin-bottom: 10px;
+  min-height: 40px;
 }
 
-code {
-  background: lightgray;
-  display: inline-block;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+.debug div {
+  margin: 5px;
+  padding: 5px 10px;
+  background: orangered;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
 }
 
 .headline {
   margin-bottom: 50px;
+}
+
+.favicon {
+  height: 22px;
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 425px) { /* mobile */
+  .wrapper {
+    padding: 0 20px;
+  }
 }
