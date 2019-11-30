@@ -1,3 +1,4 @@
+const fs = require('fs');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
@@ -7,30 +8,36 @@ const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 
+const package = JSON.parse(fs.readFileSync('./package.json'));
+
 gulp.task('sass', () => gulp.src('src/scss/base.scss')
   .pipe(sassglob())
   .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
   .pipe(autoprefixer({ cascade: false }))
-  .pipe(rename('spartan.css'))
+  .pipe(rename(`spartan-${package.version}.css`))
   .pipe(gulp.dest('dist'))
 );
 
 gulp.task('javascript', () => gulp.src('src/javascript/**/*.js')
-  .pipe(concat('spartan.js'))
+  .pipe(concat(`spartan-${package.version}.js`))
   .pipe(terser())
   .pipe(gulp.dest('dist'))
 );
 
 gulp.task('serve', () => {
   browserSync.init({
-    files: ['dist/**/*.css', 'dist/**/*.js', 'kitchensink/**/*.html'],
     open: false,
     notify: false,
     minify: false,
     server: {
       baseDir: './',
       directory: true,
-    }
+    },
+    files: [
+      'dist/**/*.css',
+      'dist/**/*.js',
+      'kitchensink/**/*'
+    ],
   });
 });
 

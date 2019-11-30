@@ -1,0 +1,13 @@
+.margin {
+
+  &-small {
+    margin-top: $margin-small;
+    margin-bottom: $margin-small;
+  }
+
+  &-large {
+    margin-top: $margin-large;
+    margin-bottom: $margin-large;
+  }
+
+}

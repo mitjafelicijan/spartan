@@ -1,0 +1,9 @@
+hr {
+  margin: 35px auto;
+  display: block;
+
+  &.divider {
+    margin: 40px auto;
+    border-top: 2px solid #eee;
+  }
+}
