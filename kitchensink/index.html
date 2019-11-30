@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spartan - Kitchen sink</title>
+    <title>Spartan - Kitchen Sink</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
 
@@ -31,27 +31,31 @@
 
     <!-- WRAPPERS -->
 
-    <section class="wrapper margin-large">
-      <h1 class="headline">🎅🏼 Wrappers</h1>
-    </section>
+    <div class="hide-on-mobile">
 
-    <section class="wrapper debug">
-      <p>Wrapper 960px</p>
-    </section>
+      <section class="wrapper margin-large">
+        <h1 class="headline">🎅🏼 Wrappers</h1>
+      </section>
 
-    <section class="wrapper full-width debug">
-      <p>Wrapper <code>.full-width</code> 100%</p>
-    </section>
+      <section class="wrapper debug">
+        <p>Normal wrapper (960px)</p>
+      </section>
 
-    <section class="wrapper small debug">
-      <p>Wrapper <code>.small</code> 660px</p>
-    </section>
+      <section class="wrapper full-width debug">
+        <p>Full width wrapper (100%)</p>
+      </section>
 
-    <section class="wrapper large debug">
-      <p>Wrapper <code>.large</code> 1100px</p>
-    </section>
+      <section class="wrapper small debug">
+        <p>Small wrapper (660px)</p>
+      </section>
 
-    <hr class="divider">
+      <section class="wrapper large debug">
+        <p>Large wrapper (1100px)</p>
+      </section>
+
+      <hr class="divider">
+
+    </div>
 
     <!-- TYPOGRAPHY -->
 
@@ -292,6 +296,54 @@
     </section>
 
     <hr class="divider">
+
+    <!-- RESPONSIVE -->
+
+    <section class="wrapper margin-large">
+
+      <h1 class="headline">🍰 Responsive visibility</h1>
+
+      <h5 class="margin-small">⌥ Show only on mobile</h5>
+      <div class="debug">
+        <div class="hide show-on-mobile">placeholder</div>
+      </div>
+
+      <h5 class="margin-small">⌥ Show only on desktop and tablet</h5>
+      <div class="debug">
+        <div class="hide-on-mobile">placeholder</div>
+      </div>
+
+      <h5 class="margin-small">⌥ Show only on tablet</h5>
+      <div class="debug">
+        <div class="hide hide-on-mobile show-on-tablet">placeholder</div>
+      </div>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- DARK THEME -->
+
+    <section class="wrapper margin-large">
+
+      <h1 class="headline">🌚 Dark mode</h1>
+
+      <p>Works only when user has dark theme enabled through global OS theme settings. This features
+        uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" target="_blank">prefers-color-scheme</a>
+        to determine if dark theme should be used.</p>
+      <p>To enable dark mode add <b>`enable-dark-mode`</b> to body class attribute.</p>
+      <p>You can test this feature by clicking on this two buttons. Must have dark mode enabled system wide!</p>
+      <p>
+        <button onclick="document.body.classList.add('enable-dark-mode')" class="button small">Enable dark mode</button>
+        <button onclick="document.body.classList.remove('enable-dark-mode')" class="button small">Disable dark mode</button>
+      </p>
+      <p>If you don't have dark mode enabled you <a href="assets/dark-mode.m4v" class="underline" target="_blank">can view this video</a> that demonstrates how it works.</p>
+
+    </section>
+
+    <hr class="divider">
+
+
 
     <!-- AUTHOR etc -->
     <footer class="wrapper">
