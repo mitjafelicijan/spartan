@@ -40,6 +40,10 @@ ol li {
   padding: 3px;
 }
 
+.gist tr {
+  border: 0;
+}
+
 @media only screen and (max-width: 425px) { /* mobile */
   .wrapper {
     padding: 0 20px;
