@@ -7,6 +7,11 @@ For more information check out this [https://spartan-ui.com](https://spartan-ui.
 ## Installation
 
 ```html
+
+<!-- version 2.0.0 -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan/dist/spartan-2.0.0.css">
+<script src="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan/dist/spartan-2.0.0.js" async></script>
+
 <!-- version 1.7 -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan@v1.7/dist/spartan.min.css">
 <script src="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan@v1.7/dist/spartan.min.js" async></script>
