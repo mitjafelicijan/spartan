@@ -1,21 +1,21 @@
 * {
-	box-sizing: border-box;
-	background-color: transparent;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	list-style-type: none;
-	outline: none;
-	text-decoration: none;
-	position: relative;
-	box-shadow: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  box-shadow: none;
 
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }

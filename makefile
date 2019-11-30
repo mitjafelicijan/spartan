@@ -2,9 +2,10 @@ SHELL := /bin/bash
 
 provision:
 	sudo apt install -y yui-compressor
+	sudo npm install -g browser-sync
 
 dev:
-	browser-sync -w --no-notify
+	browser-sync ./ -w --no-notify --directory
 
 build:
 	cd src; \
