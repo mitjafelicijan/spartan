@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  max-width: $wrapper;
+  margin: 0 auto;
+
+  &.small {
+    max-width: $wrapper-small;
+  }
+
+  &.large {
+    max-width: $wrapper-large;
+  }
+
+  &.full-width {
+    max-width: $wrapper-full-width;
+  }
+}

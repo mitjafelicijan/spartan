@@ -1,0 +1,21 @@
+
+.debug {
+  border: 1px dotted lightcoral;
+  margin-bottom: 10px;
+}
+
+code {
+  background: lightgray;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.headline {
+  margin-bottom: 50px;
+}

@@ -2,12 +2,10 @@ SHELL := /bin/bash
 
 provision:
 	sudo apt install -y yui-compressor
+	sudo npm install -g browser-sync
 
-run:
-	http-server -c-1 -p 7777
-
-livereload:
-	livereloadx --exclude "*.min.js" --exclude "*.min.css" --exclude "*.py" --exclude "*.pyc"
+dev:
+	browser-sync ./ -w --no-notify --directory
 
 build:
 	cd src; \

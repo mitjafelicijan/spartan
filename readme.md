@@ -8,12 +8,16 @@ For more information check out this [https://spartan-ui.com](https://spartan-ui.
 
 ```html
 <!-- version 1.7 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.css">
-<script src="//cdn.rawgit.com/mitjafelicijan/spartan/v1.7/dist/spartan.min.js" defer></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan@v1.7/dist/spartan.min.css">
+<script src="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan@v1.7/dist/spartan.min.js" async></script>
 
 <!-- version 1.0 -->
-<link rel="stylesheet" href="//cdn.rawgit.com/mitjafelicijan/spartan/v1.0/dist/spartan.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/mitjafelicijan/spartan@v1.0/dist/spartan.min.css">
 ```
+
+## Changes
+
+- Move to jsDelivr from RawGit.
 
 ## Why yet another UI kit?
 

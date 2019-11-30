@@ -1,0 +1,33 @@
+{
+  "name": "spartan",
+  "version": "2.0.0",
+  "description": "For more information check out this [https://spartan-ui.com](https://spartan-ui.com).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitjafelicijan/spartan.git"
+  },
+  "keywords": [],
+  "author": "Mitja Felicijan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitjafelicijan/spartan/issues"
+  },
+  "homepage": "https://github.com/mitjafelicijan/spartan#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "terser": "^4.4.0"
+  }
+}
