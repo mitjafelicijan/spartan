@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+  text-align: left;
+
+  td, th {
+    padding: 20px 0;
+  }
+
+  tr {
+    border-bottom: 2px solid $border-color;
+  }
+
+  th {
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+
+    &.ascend:after,
+    &.descend:after {
+      color: #bbb;
+      font-size: 80%;
+      padding-left: 5px;
+    }
+
+    &.ascend:after {
+      content: " \25B4";
+    }
+
+    &.descend:after {
+      content: " \25BE";
+    }
+  }
+
+  &.border {
+    border: 2px solid $border-color;
+
+    td, th {
+      padding: 20px;
+    }
+  }
+}

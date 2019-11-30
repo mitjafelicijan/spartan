@@ -5,8 +5,15 @@
 @import "wrappers";
 @import "dependencies";
 @import "typography";
+
 @import "dividers";
 @import "details";
+@import "forms";
+@import "tables";
+@import "progress";
+@import "navigation";
+
+@import "helpers";
 
 // at bottom because it overrides styles
 @import "margins";
