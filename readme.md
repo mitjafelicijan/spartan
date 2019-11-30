@@ -17,7 +17,7 @@ For more information check out this [https://spartan-ui.com](https://spartan-ui.
 
 ## Changes
 
-- Move to jsDelivr from RawGit
+- Move to jsDelivr from RawGit.
 
 ## Why yet another UI kit?
 
