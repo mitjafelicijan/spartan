@@ -24,8 +24,42 @@
   margin-right: 5px;
 }
 
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.toc {
+  margin-top: 30px;
+}
+
+.toc h4 {
+  margin-bottom: 20px;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-left: 30px;
+  padding: 3px;
+}
+
+.red {
+  color: crimson;
+}
+
+.gist tr {
+  border: 0;
+}
+
 @media only screen and (max-width: 425px) { /* mobile */
   .wrapper {
     padding: 0 20px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
+  .three-columns {
+    grid-template-columns: 1fr;
   }
 }

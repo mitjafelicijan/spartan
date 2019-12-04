@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
   <head>
 
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spartan - Kitchen Sink</title>
+    <title>Spartan 2.0.0 - Kitchen Sink</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
 
@@ -18,13 +18,46 @@
   <body>
 
     <section class="wrapper">
-      <h1 class="xxbold margin-large"><img src="favicon.png" class="favicon"> Spartan UI KIT</h1>
+      <h1 class="xxbold margin-large"><img src="favicon.png" class="favicon"> Spartan UI Kit</h1>
       <p>Small UI kit <strong>~6kb</strong> in size (without filtering and sorting) for <i>application</i> development.</p>
       <p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import.</p>
       <p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a> or <a href="https://getemoji.com/" target="_blank">utf-8 emoji</a>.</p>
       <p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
-      <p><a href="https://websitesetup.org/wp-content/uploads/2019/11/html5-tag-cheat-sheet-2019.pdf" target="_blank">HTML tag cheat sheet</a></p>
-      <p><strong>View source for details or inspect element with dev tools.</strong></p>
+      <p class="red"><strong>View source for details or inspect elements with dev tools.</strong></p>
+
+      <div class="toc">
+        <h4>Table of components</h4>
+        <ol>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#wrappers">Wrappers</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#details-panel">Details panel</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#progress-bar">Progress bar</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#form-elements">Form elements</a></li>
+          <li><a href="#information-cards">Information Cards</a></li>
+          <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+          <li><a href="#responsive-visibility">Responsive visibility</a></li>
+          <li><a href="#dark-mode">Dark mode</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- INSTALLATION -->
+
+    <section class="wrapper">
+      <a name="wrappers">
+        <h1 class="headline">🤹‍♀️ Installation</h1>
+      </a>
+      <p>Example bellow demonstrates how Spartan is included on a page. You can use jsDelivr as shown in this
+        example or you can also <a href="https://github.com/mitjafelicijan/spartan/tree/master/dist" target="_blank">download distribution files</a>
+        directly from Github page.
+      </p>
+      <script src="https://gist.github.com/mitjafelicijan/0275e8bea7fe238179dfed2a911f918e.js"></script>
     </section>
 
     <hr class="divider">
@@ -34,7 +67,9 @@
     <div class="hide-on-mobile">
 
       <section class="wrapper margin-large">
-        <h1 class="headline">🎅🏼 Wrappers</h1>
+        <a name="wrappers">
+          <h1 class="headline">🎅🏼 Wrappers</h1>
+        </a>
       </section>
 
       <section class="wrapper debug">
@@ -53,41 +88,43 @@
         <p>Large wrapper (1100px)</p>
       </section>
 
-      <hr class="divider">
-
     </div>
+
+    <hr class="divider">
 
     <!-- TYPOGRAPHY -->
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🤯 Typography</h1>
+      <a name="typography">
+        <h1 class="headline">🤯 Typography</h1>
+      </a>
 
-      <h5>Normal text</h5>
+      <h5>⌥ Normal text</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Lite text</h5>
+      <h5>⌥ Lite text</h5>
       <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text</h5>
+      <h5>⌥ Bold text</h5>
       <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text `xbold`</h5>
+      <h5>⌥ Bold text `xbold`</h5>
       <p class="xbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Bold text `xxbold`</h5>
+      <h5>⌥ Bold text `xxbold`</h5>
       <p class="xxbold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Italic text</h5>
+      <h5>⌥ Italic text</h5>
       <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Strikethrough text</h5>
+      <h5>⌥ Strikethrough text</h5>
       <p class="strikethrough">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Underline text</h5>
+      <h5>⌥ Underline text</h5>
       <p class="underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
-      <h5>Overline text</h5>
+      <h5>⌥ Overline text</h5>
       <p class="overline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius eum ex. Fugiat sunt, aliquid fugit?</p>
 
       <h1>Heading 1</h1>
@@ -105,7 +142,9 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🦁 Details panel</h1>
+      <a name="details-panel">
+        <h1 class="headline">🦁 Details panel</h1>
+      </a>
 
       <details>
         <summary>Click here to expand for details (closed by default)</summary>
@@ -129,7 +168,9 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🐔 Tables</h1>
+      <a name="tables">
+        <h1 class="headline">🐔 Tables</h1>
+      </a>
 
       <h5 class="margin-small">⌥ Normal table</h5>
 
@@ -259,13 +300,15 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🏋🏻‍♂️ Progress bar</h1>
+      <a name="progress-bar">
+        <h1 class="headline">🏋🏻‍♂️ Progress bar</h1>
+      </a>
 
       <h5 class="margin-small">⌥ Basic progress</h5>
       <progress value="40" max="100"></progress>
 
-      <h5 class="margin-small">⌥ Progress with label (webkit only)</h5>
-      <progress max="100" value="50" data-label="50% Complete"></progress>
+      <h5 class="margin-small">⌥ Progress with label (Chrome only)</h5>
+      <progress value="60" max="100" data-label="60% Complete"></progress>
 
     </section>
 
@@ -275,7 +318,9 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">⛵️ Navigation bars</h1>
+      <a name="navigation">
+        <h1 class="headline">⛵️ Navigation</h1>
+      </a>
 
       <h5 class="margin-small">⌥ Left navigation</h5>
       <nav>
@@ -297,11 +342,271 @@
 
     <hr class="divider">
 
+    <!-- BUTTONS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="buttons">
+        <h1 class="headline">👆 Buttons</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ Large buttons</h5>
+      <a href="#" class="button large">Button »</a>
+      <button class="button large">Button »</button>
+      <span class="button large">Button »</span>
+      <div class="button large">Button »</div>
+      <input type="submit" class="button large" value="Button »">
+
+      <h5 class="margin-small">⌥ Large outline buttons</h5>
+      <a href="#" class="button outline large">Button »</a>
+      <button class="button outline large">Button »</button>
+      <span class="button outline large">Button »</span>
+      <div class="button outline large">Button »</div>
+      <input type="submit" class="button outline large" value="Button »">
+
+      <h5 class="margin-small">⌥ Normal buttons</h5>
+      <a href="#" class="button">Button</a>
+      <button class="button">Button</button>
+      <span class="button">Button</span>
+      <div class="button">Button</div>
+      <input type="submit" class="button" value="Button »">
+
+      <h5 class="margin-small">⌥ Normal outline buttons</h5>
+      <a href="#" class="button outline">Button</a>
+      <button class="button outline">Button</button>
+      <span class="button outline">Button</span>
+      <div class="button outline">Button</div>
+      <input type="submit" class="button outline" value="Button »">
+
+      <h5 class="margin-small">⌥ Small buttons</h5>
+      <a href="#" class="button small">Button</a>
+      <button class="button small">Button</button>
+      <span class="button small">Button</span>
+      <div class="button small">Button</div>
+      <input type="submit" class="button small" value="Button »">
+
+      <h5 class="margin-small">⌥ Small outline buttons</h5>
+      <a href="#" class="button outline small">Button</a>
+      <button class="button outline small">Button</button>
+      <span class="button outline small">Button</span>
+      <div class="button outline small">Button</div>
+      <input type="submit" class="button outline small" value="Button »">
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- FORMS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="form-elements">
+        <h1 class="headline">👯‍♀️ Form elements</h1>
+      </a>
+
+      <form autocomplete="off">
+        <div class="three-columns">
+          <div>
+            <label for="text">Text</label>
+            <input type="text" id="text">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" autocomplete="current-password" id="password">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" autocomplete="email" id="email">
+          </div>
+
+          <div>
+            <label for="search">Search</label>
+            <input type="search" id="search">
+          </div>
+          <div>
+            <label for="tel">Tel</label>
+            <input type="tel" autocomplete="tel" id="tel">
+          </div>
+          <div>
+            <label for="url">Url</label>
+            <input type="url" id="url">
+          </div>
+
+          <div>
+            <label for="number">Number</label>
+            <input type="number" id="number">
+          </div>
+          <div>
+            <label for="range">Range</label>
+            <input type="range" id="range" step="1" min="0" max="10">
+          </div>
+          <div>
+            <label for="color">Color</label>
+            <input type="color" id="color" value="#eeeeee">
+          </div>
+
+          <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+          <div>
+            <label for="datetime-local">Datetime-local</label>
+            <input type="datetime-local" id="datetime-local" required>
+          </div>
+          <div>
+            <label for="month">Month</label>
+            <input type="month" id="month" required>
+          </div>
+
+          <div>
+            <label for="select">Select</label>
+            <select id="select">
+              <option>Richard Feynman</option>
+              <option>Isaac Newton</option>
+              <option>Erwin Schrödinger</option>
+            </select>
+          </div>
+          <div>
+            <label for="radio" class="empty-label">
+              <input type="radio" id="radio" required> Example radio
+            </label>
+          </div>
+          <div>
+            <label for="checkbox" class="empty-label">
+              <input type="checkbox" id="checkbox" required> Example checkbox
+            </label>
+          </div>
+        </div>
+        <p>
+          <label for="textarea">
+            <textarea id="textarea"></textarea>
+          </label>
+        </p>
+      </form>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- CARDS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="information-cards">
+        <h1 class="headline">🃏 Information cards</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ Normal cards</h5>
+
+      <div class="three-columns">
+        <figure>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+          <figcaption>
+            <h4>With image above</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <figcaption>
+            <h4>Without image</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <figcaption>
+            <h4>With image bellow</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+        </figure>
+      </div>
+
+      <h5 class="margin-small">⌥ Cards with outlines</h5>
+
+      <div class="three-columns">
+        <figure class="outline">
+          <img src="https://dummyimage.com/640x360/ddd/888">
+          <figcaption>
+            <h4>With image above</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="outline">
+          <figcaption>
+            <h4>Without image</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="outline">
+          <figcaption>
+            <h4>With image bellow</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+        </figure>
+      </div>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- BREADCRUMBS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="breadcrumbs">
+        <h1 class="headline">🍞 Breadcrumbs</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ With arrows (default)</h5>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+      </ol>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li>Sub-level</li>
+      </ol>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sub-level</a></li>
+        <li>Sub-sub-level</li>
+      </ol>
+
+      <h5 class="margin-small">⌥ With slashes</h5>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+      </ol>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+        <li>Sub-level</li>
+      </ol>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sub-level</a></li>
+        <li>Sub-sub-level</li>
+      </ol>
+
+    </section>
+
+    <hr class="divider">
+
     <!-- RESPONSIVE -->
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🍰 Responsive visibility</h1>
+      <a name="responsive-visibility">
+        <h1 class="headline">🍰 Responsive visibility</h1>
+      </a>
 
       <h5 class="margin-small">⌥ Show only on mobile</h5>
       <div class="debug">
@@ -326,7 +631,9 @@
 
     <section class="wrapper margin-large">
 
-      <h1 class="headline">🌚 Dark mode</h1>
+      <a name="dark-mode">
+        <h1 class="headline">🌚 Dark mode</h1>
+      </a>
 
       <p>Works only when user has dark theme enabled through global OS theme settings. This features
         uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" target="_blank">prefers-color-scheme</a>
@@ -342,8 +649,6 @@
     </section>
 
     <hr class="divider">
-
-
 
     <!-- AUTHOR etc -->
     <footer class="wrapper">
