@@ -1,0 +1,14 @@
+figure {
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  &.outline {
+    background: $border-color;
+
+    figcaption {
+      padding: 10px 20px;
+    }
+  }
+}

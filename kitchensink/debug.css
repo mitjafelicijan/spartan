@@ -34,10 +34,18 @@
   margin-top: 30px;
 }
 
+.toc h4 {
+  margin-bottom: 20px;
+}
+
 ol li {
   list-style-type: decimal;
   margin-left: 30px;
   padding: 3px;
+}
+
+.red {
+  color: crimson;
 }
 
 .gist tr {

@@ -12,6 +12,15 @@
       color: $white;
     }
 
+    figure {
+      &.outline {
+        figcaption {
+          background: $gray;
+          color: $white;
+        }
+      }
+    }
+
     .button {
       color: $dark;
     }

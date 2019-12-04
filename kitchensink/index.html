@@ -18,16 +18,15 @@
   <body>
 
     <section class="wrapper">
-      <h1 class="xxbold margin-large"><img src="favicon.png" class="favicon"> Spartan 2.0.0 Kitchen Sink</h1>
+      <h1 class="xxbold margin-large"><img src="favicon.png" class="favicon"> Spartan UI Kit</h1>
       <p>Small UI kit <strong>~6kb</strong> in size (without filtering and sorting) for <i>application</i> development.</p>
       <p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import.</p>
       <p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a> or <a href="https://getemoji.com/" target="_blank">utf-8 emoji</a>.</p>
       <p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
-      <p>This <a href="https://websitesetup.org/wp-content/uploads/2019/11/html5-tag-cheat-sheet-2019.pdf" target="_blank">HTML tag cheat sheet</a> can help with using HTML5 elements.</p>
-      <p><strong>View source for details or inspect elements with dev tools.</strong></p>
+      <p class="red"><strong>View source for details or inspect elements with dev tools.</strong></p>
 
       <div class="toc">
-        <h4>Table of contents</h4>
+        <h4>Table of components</h4>
         <ol>
           <li><a href="#installation">Installation</a></li>
           <li><a href="#wrappers">Wrappers</a></li>
@@ -38,6 +37,8 @@
           <li><a href="#navigation">Navigation</a></li>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#form-elements">Form elements</a></li>
+          <li><a href="#information-cards">Information Cards</a></li>
+          <li><a href="#breadcrumbs">Breadcrumbs</a></li>
           <li><a href="#responsive-visibility">Responsive visibility</a></li>
           <li><a href="#dark-mode">Dark mode</a></li>
         </ol>
@@ -45,6 +46,8 @@
     </section>
 
     <hr class="divider">
+
+    <!-- INSTALLATION -->
 
     <section class="wrapper">
       <a name="wrappers">
@@ -85,9 +88,9 @@
         <p>Large wrapper (1100px)</p>
       </section>
 
-      <hr class="divider">
-
     </div>
+
+    <hr class="divider">
 
     <!-- TYPOGRAPHY -->
 
@@ -304,7 +307,7 @@
       <h5 class="margin-small">⌥ Basic progress</h5>
       <progress value="40" max="100"></progress>
 
-      <h5 class="margin-small">⌥ Progress with label (webkit only)</h5>
+      <h5 class="margin-small">⌥ Progress with label (Chrome only)</h5>
       <progress value="60" max="100" data-label="60% Complete"></progress>
 
     </section>
@@ -480,6 +483,118 @@
           </label>
         </p>
       </form>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- CARDS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="information-cards">
+        <h1 class="headline">🃏 Information cards</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ Normal cards</h5>
+
+      <div class="three-columns">
+        <figure>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+          <figcaption>
+            <h4>With image above</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <figcaption>
+            <h4>Without image</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <figcaption>
+            <h4>With image bellow</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+        </figure>
+      </div>
+
+      <h5 class="margin-small">⌥ Cards with outlines</h5>
+
+      <div class="three-columns">
+        <figure class="outline">
+          <img src="https://dummyimage.com/640x360/ddd/888">
+          <figcaption>
+            <h4>With image above</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="outline">
+          <figcaption>
+            <h4>Without image</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="outline">
+          <figcaption>
+            <h4>With image bellow</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+          </figcaption>
+          <img src="https://dummyimage.com/640x360/ddd/888">
+        </figure>
+      </div>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- BREADCRUMBS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="breadcrumbs">
+        <h1 class="headline">🍞 Breadcrumbs</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ With arrows (default)</h5>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+      </ol>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li>Sub-level</li>
+      </ol>
+
+      <ol class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sub-level</a></li>
+        <li>Sub-sub-level</li>
+      </ol>
+
+      <h5 class="margin-small">⌥ With slashes</h5>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+      </ol>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+        <li>Sub-level</li>
+      </ol>
+
+      <ol class="breadcrumbs with-slash">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sub-level</a></li>
+        <li>Sub-sub-level</li>
+      </ol>
 
     </section>
 
