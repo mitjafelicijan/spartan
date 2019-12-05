@@ -21,6 +21,12 @@
       }
     }
 
+    .breadcrumbs {
+      li+li:before {
+        color: $white;
+      }
+    }
+
     .button {
       color: $dark;
     }

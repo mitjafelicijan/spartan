@@ -11,7 +11,7 @@
     content: "\00bb";
   }
 
-  &.with-slash {
+  &.with-slashes {
     li+li:before {
       padding: 5px;
       content: "/\00a0";

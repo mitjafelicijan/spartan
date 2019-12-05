@@ -38,6 +38,10 @@
   margin-bottom: 20px;
 }
 
+.toc ol {
+  columns: 2;
+}
+
 ol li {
   list-style-type: decimal;
   margin-left: 30px;
@@ -50,6 +54,10 @@ ol li {
 
 .gist tr {
   border: 0;
+}
+
+.spinner {
+  margin-right: 30px;
 }
 
 @media only screen and (max-width: 425px) { /* mobile */

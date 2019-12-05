@@ -18,15 +18,15 @@
   <body>
 
     <section class="wrapper">
-      <h1 class="xxbold margin-large"><img src="favicon.png" class="favicon"> Spartan UI Kit</h1>
-      <p>Small UI kit <strong>~6kb</strong> in size (without filtering and sorting) for <i>application</i> development.</p>
+      <h1 class="xxbold margin-large">Spartan UI Kit</h1>
+      <p>Small UI kit <strong>~4kb</strong> in size gzipped for <i>application</i> development.</p>
       <p>Default font is <a href="//fonts.google.com/specimen/Roboto" target="_blank">Roboto Latin-ext</a> implemented into css as @import.</p>
       <p>Icons can be utf-8 characters ➜ <a href="//www.copypastecharacter.com/" target="_blank">copypastecharacter.com</a> or <a href="https://getemoji.com/" target="_blank">utf-8 emoji</a>.</p>
       <p><a href="//github.com/mitjafelicijan/spartan" target="_blank">https://github.com/mitjafelicijan/spartan</a></p>
       <p class="red"><strong>View source for details or inspect elements with dev tools.</strong></p>
 
       <div class="toc">
-        <h4>Table of components</h4>
+        <h4>Table of contents</h4>
         <ol>
           <li><a href="#installation">Installation</a></li>
           <li><a href="#wrappers">Wrappers</a></li>
@@ -39,6 +39,9 @@
           <li><a href="#form-elements">Form elements</a></li>
           <li><a href="#information-cards">Information Cards</a></li>
           <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+          <li><a href="#pagination">Pagination</a></li>
+          <li><a href="#spiners">Spinners</a></li>
+          <li><a href="#tooltips">Tooltips</a></li>
           <li><a href="#responsive-visibility">Responsive visibility</a></li>
           <li><a href="#dark-mode">Dark mode</a></li>
         </ol>
@@ -143,7 +146,7 @@
     <section class="wrapper margin-large">
 
       <a name="details-panel">
-        <h1 class="headline">🦁 Details panel</h1>
+        <h1 class="headline">🕵🏻 Details panel</h1>
       </a>
 
       <details>
@@ -169,7 +172,7 @@
     <section class="wrapper margin-large">
 
       <a name="tables">
-        <h1 class="headline">🐔 Tables</h1>
+        <h1 class="headline">🏓 Tables</h1>
       </a>
 
       <h5 class="margin-small">⌥ Normal table</h5>
@@ -365,32 +368,40 @@
       <input type="submit" class="button outline large" value="Button »">
 
       <h5 class="margin-small">⌥ Normal buttons</h5>
-      <a href="#" class="button">Button</a>
-      <button class="button">Button</button>
-      <span class="button">Button</span>
-      <div class="button">Button</div>
+      <a href="#" class="button">Button »</a>
+      <button class="button">Button »</button>
+      <span class="button">Button »</span>
+      <div class="button">Button »</div>
       <input type="submit" class="button" value="Button »">
 
       <h5 class="margin-small">⌥ Normal outline buttons</h5>
-      <a href="#" class="button outline">Button</a>
-      <button class="button outline">Button</button>
-      <span class="button outline">Button</span>
-      <div class="button outline">Button</div>
+      <a href="#" class="button outline">Button »</a>
+      <button class="button outline">Button »</button>
+      <span class="button outline">Button »</span>
+      <div class="button outline">Button »</div>
       <input type="submit" class="button outline" value="Button »">
 
       <h5 class="margin-small">⌥ Small buttons</h5>
-      <a href="#" class="button small">Button</a>
-      <button class="button small">Button</button>
-      <span class="button small">Button</span>
-      <div class="button small">Button</div>
+      <a href="#" class="button small">Button »</a>
+      <button class="button small">Button »</button>
+      <span class="button small">Button »</span>
+      <div class="button small">Button »</div>
       <input type="submit" class="button small" value="Button »">
 
       <h5 class="margin-small">⌥ Small outline buttons</h5>
-      <a href="#" class="button outline small">Button</a>
-      <button class="button outline small">Button</button>
-      <span class="button outline small">Button</span>
-      <div class="button outline small">Button</div>
+      <a href="#" class="button outline small">Button »</a>
+      <button class="button outline small">Button »</button>
+      <span class="button outline small">Button »</span>
+      <div class="button outline small">Button »</div>
       <input type="submit" class="button outline small" value="Button »">
+
+      <h5 class="margin-small">⌥ Button groups</h5>
+
+      <p class="button-group">
+        <span class="button small">Button »</span>
+        <span class="button small">Button »</span>
+        <span class="button small">Button »</span>
+      </p>
 
     </section>
 
@@ -450,14 +461,9 @@
             <input type="date" id="date" required>
           </div>
           <div>
-            <label for="datetime-local">Datetime-local</label>
-            <input type="datetime-local" id="datetime-local" required>
-          </div>
-          <div>
             <label for="month">Month</label>
             <input type="month" id="month" required>
           </div>
-
           <div>
             <label for="select">Select</label>
             <select id="select">
@@ -466,6 +472,7 @@
               <option>Erwin Schrödinger</option>
             </select>
           </div>
+
           <div>
             <label for="radio" class="empty-label">
               <input type="radio" id="radio" required> Example radio
@@ -475,6 +482,13 @@
             <label for="checkbox" class="empty-label">
               <input type="checkbox" id="checkbox" required> Example checkbox
             </label>
+          </div>
+          <div>
+            <br><br>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label> Toggle on/off
           </div>
         </div>
         <p>
@@ -511,6 +525,7 @@
           <figcaption>
             <h4>Without image</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+            <p><a href="#" class="button small">Show more »</a></p>
           </figcaption>
         </figure>
 
@@ -538,6 +553,7 @@
           <figcaption>
             <h4>Without image</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil minima labore soluta, recusandae fuga repellendus nulla explicabo aspernatur assumenda aut nobis totam eius.</p>
+            <p><a href="#" class="button small">Show more »</a></p>
           </figcaption>
         </figure>
 
@@ -581,20 +597,120 @@
 
       <h5 class="margin-small">⌥ With slashes</h5>
 
-      <ol class="breadcrumbs with-slash">
+      <ol class="breadcrumbs with-slashes">
         <li><a href="#">Home</a></li>
       </ol>
 
-      <ol class="breadcrumbs with-slash">
+      <ol class="breadcrumbs with-slashes">
         <li><a href="#">Home</a></li>
         <li>Sub-level</li>
       </ol>
 
-      <ol class="breadcrumbs with-slash">
+      <ol class="breadcrumbs with-slashes">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sub-level</a></li>
         <li>Sub-sub-level</li>
       </ol>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- PAGINATION -->
+
+    <section class="wrapper margin-large">
+
+      <a name="pagination">
+        <h1 class="headline">📕 Pagination</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ Normal pagination (default)</h5>
+
+      <ul class="pagination">
+        <li><a href="#">« Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#">11</a></li>
+        <li><a href="#">12</a></li>
+        <li><a href="#">13</a></li>
+        <li><a href="#">14</a></li>
+        <li><a href="#">15</a></li>
+        <li><a href="#">Next »</a></li>
+      </ul>
+
+      <h5 class="margin-small">⌥ Full width distributed pagination</h5>
+
+      <ul class="pagination full-width">
+        <li><a href="#">« Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#">11</a></li>
+        <li><a href="#">12</a></li>
+        <li><a href="#">13</a></li>
+        <li><a href="#">14</a></li>
+        <li><a href="#">15</a></li>
+        <li><a href="#">Next »</a></li>
+      </ul>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- SPINNERS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="spinners">
+        <h1 class="headline">🤸‍♀️ Spinners</h1>
+      </a>
+
+      <h5 class="margin-small">⌥ Small spinners (default)</h5>
+
+      <p>
+        <div class="spinner"></div>
+        <div class="spinner slow"></div>
+        <div class="spinner fast"></div>
+      </p>
+
+      <h5 class="margin-small">⌥ Large spinners</h5>
+
+      <p>
+        <div class="spinner large"></div>
+        <div class="spinner large slow"></div>
+        <div class="spinner large fast"></div>
+      </p>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- TOOLTIPS -->
+
+    <section class="wrapper margin-large">
+
+      <a name="tooltips">
+        <h1 class="headline">🎟 Tooltips</h1>
+      </a>
+
+      <p>
+        <span class="tooltip">Hover over me to show top tooltip
+          <span class="tooltiptext">Tooltip text</span>
+        </span>
+      </p>
+
+      <p>
+        <span class="tooltip bottom">Hover over me to show bottom tooltip
+          <span class="tooltiptext">Tooltip text</span>
+        </span>
+      </p>
 
     </section>
 
