@@ -2,7 +2,7 @@ SHELL := /bin/bash
 
 provision:
 	sudo apt install -y yui-compressor
-	sudo npm install -g browser-sync
+	npm install -g browser-sync
 
 dev:
 	browser-sync ./ -w --no-notify --directory
@@ -13,3 +13,6 @@ build:
 	yui-compressor --line-break 80 spartan.css -o ../dist/spartan.min.css; \
 	yui-compressor --line-break 80 spartan.js -o ../dist/spartan.min.js; \
 	rm spartan.css
+
+deploy:
+	cd kitchensink && scp -r * root@165.22.87.180:/var/www/html/spartan-ui.com/
