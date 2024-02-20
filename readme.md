@@ -1,7 +1,5 @@
 # Spartan minimal UI kit
 
-For more information check out this [https://spartan-ui.com](https://spartan-ui.com).
-
 [Report bug or enhancement »](https://github.com/mitjafelicijan/spartan/issues/new)
 
 ## Installation
