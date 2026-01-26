@@ -1,4 +1,3 @@
-
 .debug {
   border: 1px dotted lightcoral;
   margin-bottom: 10px;
@@ -60,13 +59,17 @@ ol li {
   margin-right: 30px;
 }
 
-@media only screen and (max-width: 425px) { /* mobile */
+@media only screen and (max-width: 425px) {
+
+  /* mobile */
   .wrapper {
     padding: 0 20px;
   }
+
   .button {
     margin-bottom: 10px;
   }
+
   .three-columns {
     grid-template-columns: 1fr;
   }
