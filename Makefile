@@ -1,18 +1,12 @@
-SHELL := /bin/bash
-
-provision:
-	sudo apt install -y yui-compressor
-	npm install -g browser-sync
-
-dev:
-	browser-sync ./ -w --no-notify --directory
+VERSION=2.1.0
 
 build:
-	cd src; \
-	cat dependencies.css reset.css grid.css typography.css components.css > spartan.css; \
-	yui-compressor --line-break 80 spartan.css -o ../dist/spartan.min.css; \
-	yui-compressor --line-break 80 spartan.js -o ../dist/spartan.min.js; \
-	rm spartan.css
+	npx -y sass --no-source-map src/scss/base.scss spartan.css
+	cat src/javascript/*.js > spartan.js
+	npx -y minify spartan.js > dist/spartan.${VERSION}.min.js
+	npx -y minify spartan.css > dist/spartan.${VERSION}.min.css
+	cp spartan.css spartan.js kitchensink/
+	rm spartan.css spartan.js
 
-deploy:
-	cd kitchensink && scp -r * root@165.22.87.180:/var/www/html/spartan-ui.com/
+dev:
+	npx -y browser-sync start --watch --server --directory
